@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="activiti_parent:war">
+    <output-path>$PROJECT_DIR$/../../ideai/activiti_parent/target</output-path>
+    <root id="archive" name="activiti_parent.war">
+      <element id="artifact" artifact-name="activiti_parent:war exploded" />
+    </root>
+  </artifact>
+</component>

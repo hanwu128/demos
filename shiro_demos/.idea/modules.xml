@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../shiro_authen/shiro_authen.iml" filepath="$PROJECT_DIR$/../shiro_authen/shiro_authen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shiro_demo_01/shiro_demo_01.iml" filepath="$PROJECT_DIR$/../shiro_demo_01/shiro_demo_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shiro_parent/shiro_parent.iml" filepath="$PROJECT_DIR$/../shiro_parent/shiro_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../shiro_web/shiro_web.iml" filepath="$PROJECT_DIR$/../shiro_web/shiro_web.iml" />
+    </modules>
+  </component>
+</project>

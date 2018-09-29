@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hw.mapper.SysUser">
+
+    <resultMap id="userMap" type="com.hw.security.entity.SysUser">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+        <collection property="roles" ofType="com.hw.security.entity.SysRole">
+            <result column="name" property="name"/>
+        </collection>
+
+    </resultMap>
+
+    <select id="findByName" resultMap="userMap">
+        SELECT u.id,u.username,u.password,r.name FROM Sys_User u
+        LEFT JOIN sys_role_user ur on u.id = ur.Sys_User_id
+        LEFT JOIN Sys_Role r on r.id = ur.Sys_Role_id
+        WHERE u.username = #{username}
+
+    </select>
+</mapper>

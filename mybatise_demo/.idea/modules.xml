@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../mybatis_generator_demo/mybatis_generator_demo.iml" filepath="$PROJECT_DIR$/../mybatis_generator_demo/mybatis_generator_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mybatise_parent/mybatise_parent.iml" filepath="$PROJECT_DIR$/../mybatise_parent/mybatise_parent.iml" />
+    </modules>
+  </component>
+</project>

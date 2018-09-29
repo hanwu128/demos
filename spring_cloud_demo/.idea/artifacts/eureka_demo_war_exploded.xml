@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="eureka_demo:war exploded">
+    <output-path>$PROJECT_DIR$/eureka_demo/target/eureka</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="eureka_server" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/eureka_demo/target/eureka/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="eureka_server/web/Web" />
+    </root>
+  </artifact>
+</component>

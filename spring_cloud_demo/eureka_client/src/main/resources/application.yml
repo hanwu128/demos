@@ -1,0 +1,17 @@
+server:
+  port: 8182
+
+spring:
+  application:
+    name: eureka-client
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8082/eureka/
+
+
+
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:sec="http://www.springframework.org/schema/security"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context-3.1.xsd
+                        http://www.springframework.org/schema/tx
+                        http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+                        http://www.springframework.org/schema/security
+                        http://www.springframework.org/schema/security/spring-security.xsd">
+
+
+    <!-- 配置不过滤的资源（静态资源及登录相关）.是忽略拦截某些资源的意思，主要是针对静态资源 -->
+    <http pattern="/**/*.css" security="none"></http>
+    <http pattern="/**/*.jpg" security="none"></http>
+    <http pattern="/**/*.jpeg" security="none"></http>
+    <http pattern="/**/*.gif" security="none"></http>
+    <http pattern="/**/*.png" security="none"></http>
+    <http pattern="/js/*.js" security="none"></http>
+
+    <http pattern="/login.jsp" security="none"></http>
+    <http pattern="/getCode" security="none"/><!-- 不过滤验证码 -->
+    <http pattern="/test/**" security="none"></http><!-- 不过滤测试内容 -->
+
+    <http auto-config="true">
+        <!-- 表示访问app.jsp时，需要ROLE_SERVICE权限 -->
+        <intercept-url pattern="/adminPage.jsp" access="hasRole('ROLE_ADMIN')"></intercept-url>
+        <!--表示访问任何资源都需要ROLE_ADMIN权限。-->
+        <intercept-url pattern="/**" access="hasRole('ROLE_USER')"></intercept-url>
+    </http>
+
+    <!-- 导入数据源 -->
+    <beans:import resource="applicationContext-dataSource.xml"></beans:import>
+
+    <!-- 默认数据库对用户进行存储 Spring Security默认情况下需要两张表，用户表和权限表。-->
+    <authentication-manager>
+        <authentication-provider>
+            <jdbc-user-service data-source-ref="mysqlDataSource"/>
+        </authentication-provider>
+    </authentication-manager>
+</beans:beans>

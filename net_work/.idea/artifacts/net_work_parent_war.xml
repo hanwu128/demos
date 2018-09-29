@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="net_work_parent:war">
+    <output-path>$PROJECT_DIR$/../net_work_parent/target</output-path>
+    <root id="archive" name="net_work_parent.war">
+      <element id="artifact" artifact-name="net_work_parent:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="security_role_per" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="psring_security_01" target="1.7" />
+      <module name="security5" target="1.8" />
+      <module name="security5_2" target="1.8" />
+      <module name="security_role_per" target="1.8" />
+      <module name="spring_security01" target="1.7" />
+      <module name="spring_security02" target="1.7" />
+      <module name="spring_security03" target="1.7" />
+      <module name="spring_security04" target="1.7" />
+      <module name="spring_security05" target="1.7" />
+      <module name="spring_security_parent" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

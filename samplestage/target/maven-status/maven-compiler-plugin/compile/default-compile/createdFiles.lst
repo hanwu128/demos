@@ -1,0 +1,7 @@
+com\example\stage\processor\sample\SampleProcessor.class
+PipelineStages.json
+ElDefinitions.json
+com\example\stage\lib\sample\Errors.class
+datacollector-resource-bundles.json
+com\example\stage\processor\sample\Groups.class
+com\example\stage\processor\sample\SampleDProcessor.class

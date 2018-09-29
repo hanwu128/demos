@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="design_patterns_parent:war exploded">
+    <output-path>$PROJECT_DIR$/../design_patterns_parent/target/design_patterns_parent</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="design_patterns_parent" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../design_patterns_parent/target/design_patterns_parent/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="design_patterns_parent/web/Web" />
+    </root>
+  </artifact>
+</component>

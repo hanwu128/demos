@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../chat_room_demo/chat_room_demo.iml" filepath="$PROJECT_DIR$/../chat_room_demo/chat_room_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../net_work_parent/net_work_parent.iml" filepath="$PROJECT_DIR$/../net_work_parent/net_work_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../socket_demo/socket_demo.iml" filepath="$PROJECT_DIR$/../socket_demo/socket_demo.iml" />
+    </modules>
+  </component>
+</project>

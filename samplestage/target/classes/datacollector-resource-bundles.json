@@ -1,0 +1,5 @@
+[
+  "com.example.stage.processor.sample.Groups",
+  "com.example.stage.processor.sample.SampleDProcessor",
+  "com.example.stage.lib.sample.Errors"
+]

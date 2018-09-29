@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mq_parent:war">
+    <output-path>$PROJECT_DIR$/../mq_parent/target</output-path>
+    <root id="archive" name="mq_parent.war">
+      <element id="artifact" artifact-name="mq_parent:war exploded" />
+    </root>
+  </artifact>
+</component>

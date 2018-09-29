@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../spring_security_parent/psring_security_01.iml" filepath="$PROJECT_DIR$/../spring_security_parent/psring_security_01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../security5/security5.iml" filepath="$PROJECT_DIR$/../security5/security5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../security_role_per/security_role_per.iml" filepath="$PROJECT_DIR$/../security_role_per/security_role_per.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring_security01/spring_security01.iml" filepath="$PROJECT_DIR$/../spring_security01/spring_security01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring_security02/spring_security02.iml" filepath="$PROJECT_DIR$/../spring_security02/spring_security02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring_security03/spring_security03.iml" filepath="$PROJECT_DIR$/../spring_security03/spring_security03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring_security04/spring_security04.iml" filepath="$PROJECT_DIR$/../spring_security04/spring_security04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring_security05/spring_security05.iml" filepath="$PROJECT_DIR$/../spring_security05/spring_security05.iml" />
+    </modules>
+  </component>
+</project>

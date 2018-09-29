@@ -1,0 +1,10 @@
+#mq配置
+spring:
+  mqtt:
+    host: tcp://10.100.157.202:1883
+    clientid: mqttjs_6c91a542b3
+    topic: topic
+    username: admin
+    password: public
+    timeout: 10
+    keepalive: 20

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mybatise_parent:war">
+    <output-path>$PROJECT_DIR$/../mybatise_parent/target</output-path>
+    <root id="archive" name="mybatise_parent.war">
+      <element id="artifact" artifact-name="mybatise_parent:war exploded" />
+    </root>
+  </artifact>
+</component>

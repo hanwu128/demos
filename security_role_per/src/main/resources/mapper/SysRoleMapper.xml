@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hw.mapper.Roles">
+
+    <resultMap id="rolesMap" type="com.hw.security.entity.SysRole">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <collection property="permissions" ofType="com.hw.security.entity.Syspermission">
+            <id property="id" column="perid"/>
+            <result property="name" column="pname"/>
+            <result property="description" column="descritpion"/>
+            <result property="url" column="url"/>
+            <result property="pid" column="pid"/>
+            <result property="method" column="method"/>
+        </collection>
+    </resultMap>
+
+    <select id="findByName" resultMap="rolesMap">
+        SELECT id,name FROM Sys_Role WHERE name=#{name}
+    </select>
+
+    <select id="selectById" resultType="com.hw.security.entity.SysRole">
+        select * from Sys_Role where id = #{id}
+    </select>
+
+    <select id="findByRoleName" resultMap="rolesMap">
+        SELECT r.id,r.name,p.id as perid,p.name as pname,p.descritpion,p.url,p.pid,p.method FROM Sys_Role r
+        LEFT JOIN Sys_permission_role pr on r.id = pr.role_id
+        LEFT JOIN Sys_permission p on p.id = pr.permission_id
+        WHERE r.name = #{name}
+    </select>
+</mapper>
