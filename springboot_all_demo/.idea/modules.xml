@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../springboot-01-cache/springboot-01-cache.iml" filepath="$PROJECT_DIR$/../springboot-01-cache/springboot-01-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springboot-02-amqp/springboot-02-amqp.iml" filepath="$PROJECT_DIR$/../springboot-02-amqp/springboot-02-amqp.iml" />
       <module fileurl="file://$PROJECT_DIR$/../springboot_zh_parent/springboot_zh_parent.iml" filepath="$PROJECT_DIR$/../springboot_zh_parent/springboot_zh_parent.iml" />
     </modules>
   </component>
