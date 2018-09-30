@@ -8,12 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-01-cache" />
         <module name="springboot-02-amqp" />
+        <module name="springboot-03-elasticsearch" />
+        <module name="springboot-04-task" />
+        <module name="springboot-05-security" />
         <module name="springboot_zh_parent" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="springboot-01-cache" target="1.8" />
       <module name="springboot-02-amqp" target="1.8" />
+      <module name="springboot-03-elasticsearch" target="1.8" />
+      <module name="springboot-04-task" target="1.8" />
+      <module name="springboot-05-security" target="1.8" />
       <module name="springboot_zh_parent" target="1.7" />
     </bytecodeTargetLevel>
   </component>

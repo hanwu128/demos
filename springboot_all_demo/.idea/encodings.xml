@@ -3,7 +3,9 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/../springboot-01-cache" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../springboot-02-amqp" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../springboot-02-amqp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-03-elasticsearch" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-04-task" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../springboot-05-security" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../springboot_zh_parent" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

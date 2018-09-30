@@ -9,6 +9,9 @@
         <option value="$PROJECT_DIR$/../springboot_zh_parent/pom.xml" />
         <option value="$PROJECT_DIR$/../springboot-01-cache/pom.xml" />
         <option value="$PROJECT_DIR$/../springboot-02-amqp/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot-03-elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot-04-task/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot-05-security/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>欢迎</h1>
+<div sec:authorize="!isAuthenticated()">
+    <h2><a th:href="@{/userlogin}">请登录</a></h2>
+</div>
+<div sec:authorize="isAuthenticated()">
+    <h2><span sec:authentication="name"></span>&nbsp;用&nbsp;<span
+            sec:authentication="principal.authorities"></span>&nbsp;登录</h2>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="注销">
+    </form>
+</div>
+<div sec:authorize="hasRole('VIP1')">
+    <h3>普通</h3>
+    <ul>
+        <li><a th:href="@{/level1/1}">P1</a></li>
+        <li><a th:href="@{/level1/2}">P2</a></li>
+        <li><a th:href="@{/level1/3}">P3</a></li>
+    </ul>
+</div>
+
+<div sec:authorize="hasRole('VIP2')">
+    <h3>高级</h3>
+    <ul>
+        <li><a th:href="@{/level2/1}">G1</a></li>
+        <li><a th:href="@{/level2/2}">G2</a></li>
+        <li><a th:href="@{/level2/3}">G3</a></li>
+    </ul>
+</div>
+
+<div sec:authorize="hasRole('VIP3')">
+    <h3>绝世</h3>
+    <ul>
+        <li><a th:href="@{/level3/1}">J1</a></li>
+        <li><a th:href="@{/level3/2}">J2</a></li>
+        <li><a th:href="@{/level3/3}">J3</a></li>
+    </ul>
+</div>
+</body>
+</html>

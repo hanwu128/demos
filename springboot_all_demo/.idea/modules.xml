@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../springboot-01-cache/springboot-01-cache.iml" filepath="$PROJECT_DIR$/../springboot-01-cache/springboot-01-cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/../springboot-02-amqp/springboot-02-amqp.iml" filepath="$PROJECT_DIR$/../springboot-02-amqp/springboot-02-amqp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springboot-03-elasticsearch/springboot-03-elasticsearch.iml" filepath="$PROJECT_DIR$/../springboot-03-elasticsearch/springboot-03-elasticsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springboot-04-task/springboot-04-task.iml" filepath="$PROJECT_DIR$/../springboot-04-task/springboot-04-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../springboot-05-security/springboot-05-security.iml" filepath="$PROJECT_DIR$/../springboot-05-security/springboot-05-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/../springboot_zh_parent/springboot_zh_parent.iml" filepath="$PROJECT_DIR$/../springboot_zh_parent/springboot_zh_parent.iml" />
     </modules>
   </component>
