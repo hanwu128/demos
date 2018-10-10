@@ -11,6 +11,8 @@
         <module name="springboot-03-elasticsearch" />
         <module name="springboot-04-task" />
         <module name="springboot-05-security" />
+        <module name="springboot-06-dubbo-ticket" />
+        <module name="springboot-06-dubbo-user" />
         <module name="springboot_zh_parent" />
       </profile>
     </annotationProcessing>
@@ -20,6 +22,9 @@
       <module name="springboot-03-elasticsearch" target="1.8" />
       <module name="springboot-04-task" target="1.8" />
       <module name="springboot-05-security" target="1.8" />
+      <module name="springboot-06-dubbo-server" target="1.8" />
+      <module name="springboot-06-dubbo-ticket" target="1.8" />
+      <module name="springboot-06-dubbo-user" target="1.8" />
       <module name="springboot_zh_parent" target="1.7" />
     </bytecodeTargetLevel>
   </component>

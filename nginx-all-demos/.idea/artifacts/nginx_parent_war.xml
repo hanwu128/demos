@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="nginx-parent:war">
+    <output-path>$PROJECT_DIR$/nginx-parent/target</output-path>
+    <root id="archive" name="nginx-parent.war">
+      <element id="artifact" artifact-name="nginx-parent:war exploded" />
+    </root>
+  </artifact>
+</component>
