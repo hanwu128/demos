@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- DT实例 -->
+<mapper namespace="com.lenovo.iot.digitaltwin.ist.stream">
+    <!--
+        查询所有DT实例列表，不返回DT实例属性
+    -->
+    <select id="getDtIstListSummary" resultMap="dtIstListAllResultMap">
+        select id,name from dt_instance
+    </select>
+    <resultMap id="dtIstListAllResultMap" type="DigitalTwinInstance">
+        <id property="id" column="id" />
+        <result property="name" column="name" />
+    </resultMap>
+
+    <!--
+        查询所有DT实例列表，同时返回DT实例属性
+    -->
+    <select id="getDtIstListDetail" resultMap="dtIstListDetailResultMap">
+        select
+            ist.id as ist_id,
+            ist.name as ist_name,
+            attr.id as attr_id,
+            attr.name as attr_name,
+            attr.attrtype as attr_attrtype,
+            attr.datatype as attr_datatype
+        from dt_instance as ist
+        left join dt_instance_atrr as attr
+        on ist.id = attr.instance;
+    </select>
+    <resultMap id="dtIstListDetailResultMap" type="DigitalTwinInstance">
+        <id property="id" column="ist_id" />
+        <result property="name" column="ist_name" />
+        <collection property="attr" ofType="DigitalTwinInstanceAttr">
+            <id property="id" column="attr_id" />
+            <result property="name" column="attr_name" />
+            <result property="attrtype" column="attr_attrtype" />
+            <result property="datatype" column="attr_datatype" />
+        </collection>
+    </resultMap>
+
+    <!-- 查询DT实例详情 -->
+    <select id="getDtIstDetail"  resultMap="dtIstDetailResultMap">
+        select
+            ist.id as ist_id,
+            ist.name as ist_name,
+            attr.id as attr_id,
+            attr.instance as attr_instance,
+            attr.name as attr_name,
+            attr.displayname as attr_displayname,
+            attr.attrtype as attr_attrtype,
+            attr.datatype as attr_datatype,
+            attr.unit as attr_unit
+        from dt_instance as ist
+        left join dt_instance_atrr as attr
+        on ist.id = attr.instance
+        where ist.id = #{id};
+    </select>
+    <resultMap id="dtIstDetailResultMap" type="DigitalTwinInstance">
+        <id property="id" column="ist_id" />
+        <result property="name" column="ist_name" />
+        <collection property="attr" ofType="DigitalTwinInstanceAttr">
+            <id property="id" column="attr_id" />
+            <result property="instance" column="attr_instance" />
+            <result property="name" column="attr_name" />
+            <result property="displayname" column="attr_displayname" />
+            <result property="attrtype" column="attr_attrtype" />
+            <result property="datatype" column="attr_datatype" />
+            <result property="unit" column="attr_unit" />
+        </collection>
+    </resultMap>
+
+    <!-- 更新物实例锁状态 -->
+    <update id="updateLock" parameterType="DigitalTwinInstance">
+        update dt_instance set lockup=#{lockup} where id=#{id}
+    </update>
+
+</mapper>

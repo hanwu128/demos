@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- DT实例属性 -->
+<mapper namespace="com.lenovo.iot.digitaltwin.istattr.stream">
+    <!-- 更新DT实例属性  -->
+    <update id="updateDtIstAttr" parameterType="DigitalTwinInstanceAttr">
+        update dt_instance_atrr set metric=#{metric},deviceid=#{deviceid},value=#{value},mtime=now(),atime=now() where id = #{id};
+    </update>
+</mapper>

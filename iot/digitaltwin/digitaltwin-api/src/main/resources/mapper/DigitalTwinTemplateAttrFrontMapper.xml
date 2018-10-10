@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- DT模板属性 -->
+<mapper namespace="com.lenovo.iot.digitaltwin.tplattr.front">
+    <!--
+        添加DT模板属性，批量添加
+    -->
+    <insert id="add" parameterType="DigitalTwinTemplateAttr">
+        insert into dt_tpl_attr(tpl,name,displayname,attrtype,datatype,value,unit,ctime,mtime) values
+        <foreach collection="list" item="t" separator=",">
+            (#{t.tpl},#{t.name},#{t.displayname},#{t.attrtype},#{t.datatype},#{t.value},#{t.unit},now(),now())
+        </foreach>
+    </insert>
+
+    <!--
+        更新DT模板属性
+    -->
+    <update id="update" parameterType="DigitalTwinTemplateAttr">
+        update dt_tpl_attr
+        set name=#{name},displayname=#{displayname},attrtype=#{attrtype},datatype=#{datatype},value=#{value},unit=#{unit},mtime=now()
+        where id=#{id}
+    </update>
+
+    <!--
+        删除DT模板属性,支持批量
+    -->
+    <delete id="delete">
+        delete from dt_tpl_attr where id in(
+        <foreach collection="list" item="id" separator=",">
+        #{id}
+        </foreach>
+        )
+    </delete>
+
+</mapper>

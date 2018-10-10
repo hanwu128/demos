@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lenovo.iot.devicemanager.dao.IStreamingDeviceAppDao">
+	<insert id="doInsertStreamingDeviceApp" useGeneratedKeys="true" keyProperty="id" parameterType="StreamingDeviceAppVO">
+	INSERT INTO
+		streaming_device_app(
+					  company_id,
+					 `streamingid`,
+					  deviceid,
+					  islive,
+					  period,
+					  periodunit,
+					  createtimeat,
+					  status,
+					  appname,
+					  appversion,
+					  appdesc
+					  )
+	VALUES
+		(#{companyid},
+		 #{streamingid},
+		 #{deviceid},
+		 #{islive},
+		 #{period},
+		 #{periodunit},
+		 #{createtimeat},
+		 #{status},
+		 #{appname},
+		 #{appversion},
+		 #{appdesc}
+		)
+	</insert>
+
+	<select id="findStreamingDeviceAppVOBaseById" resultType="com.lenovo.iot.devicemanager.model.bo.StreamingCallbackFlight" parameterType="StreamingCallbackFlight">
+		SELECT
+		t.id as topid,
+		t.company_id as companyid,
+		t.streamingid as streamingid,
+		t.deviceid as  deviceid,
+		t.createtimeat as createtimeat,
+		SUBSTRING(from_unixtime(substring(t.createtimeat, 1, 10) ) ,1,19) as createtimeatshow,
+		t.status as status,
+		t.appname,
+		t.appversion,
+		t.appdesc,
+		tt.streamingname as streamingname,
+		tt.streamingdesc as streamingdesc,
+		tt.createtimeat as createtimeat,
+		ttt.device_id as deviceidcode,
+		ttt.policy_name as policyname,
+		ttt.access_key as accesskey,
+		ttt.secret_key as secretkey,
+		ttt.device_desc as devicedesc
+		FROM
+		streaming_device_app t
+
+		LEFT JOIN
+		streaming tt on t.streamingid  = tt.id
+
+		LEFT JOIN
+		device ttt ON t.deviceid = ttt.id
+
+		WHERE
+		1 = 1
+		<if test="id != null and id != 0">
+			AND  t.id = #{id}
+		</if>
+		
+		<if test="companyid != null and companyid != 0 ">
+			AND  t.company_id = #{companyid}
+		</if>
+	</select>
+	
+	<select id="findStreamingDeviceAppVOBaseByParameters" resultType="com.lenovo.iot.devicemanager.model.bo.StreamingCallbackFlight" parameterType="StreamingCallbackFlight">
+		SELECT
+		t.id as topid,
+		t.company_id as companyid,
+		t.streamingid as streamingid,
+		t.deviceid as  deviceid,
+		t.createtimeat as createtimeat,
+		SUBSTRING(from_unixtime(substring(t.createtimeat, 1, 10) ) ,1,19) as createtimeatshow,
+		t.status as status,
+		t.appname,
+		t.appversion,
+		t.appdesc,
+		tt.streamingname as streamingname,
+		tt.streamingdesc as streamingdesc,
+		tt.createtimeat as createtimeat,
+		ttt.device_id as deviceidcode,
+		ttt.policy_name as policyname,
+		ttt.access_key as accesskey,
+		ttt.secret_key as secretkey,
+		ttt.device_desc as devicedesc
+		FROM
+		streaming_device_app t
+
+		LEFT JOIN
+		streaming tt on t.streamingid  = tt.id
+
+		LEFT JOIN
+		device ttt ON t.deviceid = ttt.id
+
+		WHERE
+		1 = 1
+		<if test="id != null and id != 0">
+			AND  t.id = #{id}
+		</if>
+		
+		<if test="companyid != null and companyid != 0 ">
+			AND  t.company_id = #{companyid}
+		</if>
+		
+		<if test="accesskey != null and accesskey != '' ">
+			AND (ttt.access_key like #{accesskey}
+			OR tt.streamingname like #{accesskey})
+		</if>
+
+		<if test="islive != null and islive != '' ">
+			AND  t.islive != #{islive}
+		</if>
+
+		<if test="appname != null and appname != '' ">
+			AND  t.appname = #{appname}
+		</if>
+
+		<if test="deviceid != null and deviceid != 0 ">
+			AND  t.deviceid = #{deviceid}
+		</if>
+		
+		<if test="sort_orderby != null and sort_orderby != ''">
+        	order by ${sort_orderby} ${sort_rule}
+        </if>
+        
+		<if test="limitStart != null and limitStart != -1 and limitEnd != null and limitEnd != 0 ">
+			limit #{limitStart} , #{limitEnd}
+		</if>
+	</select>
+	<select id="findStreamingDeviceAppVOBaseCountByParameters" resultType="Integer" parameterType="StreamingCallbackFlight">
+		SELECT
+		COUNT(t.id)
+		FROM
+		streaming_device_app t
+
+		LEFT JOIN
+		streaming tt on t.streamingid  = tt.id
+
+		LEFT JOIN
+		device ttt ON t.deviceid = ttt.id
+
+		WHERE
+		1 = 1
+		<if test="id != null and id != 0">
+			AND  t.id = #{id}
+		</if>
+		
+		<if test="companyid != null and companyid != 0 ">
+			AND  t.company_id = #{companyid}
+		</if>
+		
+		<if test="accesskey != null and accesskey != '' ">
+			AND (ttt.access_key like #{accesskey}
+			OR tt.streamingname like #{accesskey})
+		</if>
+
+		<if test="islive != null and islive != '' ">
+			AND  t.islive != #{islive}
+		</if>
+
+		<if test="deviceid != null and deviceid != 0 ">
+			AND  t.deviceid = #{deviceid}
+		</if>
+	</select>
+
+	<update id="doUpdateStreamingDeviceAppVO" parameterType="com.lenovo.iot.devicemanager.model.bo.StreamingDeviceAppVO">
+		UPDATE streaming_device_app
+		<set>
+			<if test="streamingid != null and streamingid != 0">
+				streamingid = #{streamingid},
+			</if>
+
+			<if test="deviceid != null and deviceid != 0">
+				deviceid = #{deviceid},
+			</if>
+
+			<if test="islive != null and islive != '' ">
+				islive = #{islive},
+			</if>
+
+			<if test="status != null and status != '' ">
+				status = #{status}
+			</if>
+
+		</set>
+
+		WHERE id = #{id}
+
+		<if test="streamingid != null and streamingid != '' and streamingid != 0">
+			AND streamingid = #{streamingid}
+		</if>
+		<if test="companyid != null and companyid != 0 ">
+			AND company_id = #{companyid}
+		</if>
+	</update>
+
+	<select id="findStreamingDeviceAppVOByParameter" resultType="com.lenovo.iot.devicemanager.model.bo.StreamingDeviceAppVO" parameterType="StreamingDeviceAppVO">
+		SELECT
+		id,
+		company_id as companyid,
+		`streamingid`,
+		deviceid
+		FROM
+		streaming_device_app t
+
+		WHERE
+		1 = 1
+		<if test="id != null and id != '' and id != 0">
+			AND  id = #{id}
+		</if>
+
+		<if test="streamingid != null and streamingid != '' and streamingid != 0">
+			AND  streamingid = #{streamingid}
+		</if>
+
+		<if test="deviceid != null and deviceid != '' and deviceid != 0">
+			AND  deviceid = #{deviceid}
+		</if>
+
+	</select>
+
+
+
+	<update id="doUpdateStreamingDeviceAppByAppnameDeviceid" parameterType="com.lenovo.iot.devicemanager.model.bo.TaskVO">
+		update streaming_device_app s, device d
+		<set>
+			s.status=#{appstatus}
+		</set>
+
+		WHERE s.deviceid = d.id and s.islive = 'true' 
+		and d.device_id = #{device_id} 
+		and s.appname = #{appname}
+	</update>
+
+	<select id="getDeviceStreamings" resultType="com.lenovo.iot.devicemanager.model.bo.StreamingCallbackFlight" parameterType="StreamingCallbackFlight">
+		SELECT sda.id,
+		s.id as streamingid,
+		s.streamingname,
+		sda.status,
+		sda.createtimeat,
+		sda.appname,
+		sda.appversion,
+		d.device_id as deviceidcode
+		from streaming s 
+		inner join streaming_device_app sda on sda.streamingid = s.id 
+		inner join device d on d.id = sda.deviceid 
+		WHERE 
+		sda.islive = 'true'
+		<if test="deviceidcode != null and deviceidcode != ''">
+			AND d.device_id = #{deviceidcode}
+		</if>
+		<if test="appname != null and appname != ''">
+			AND sda.appname = #{appname}
+		</if>
+	</select>
+
+</mapper>

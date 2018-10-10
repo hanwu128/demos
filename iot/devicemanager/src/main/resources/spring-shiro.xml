@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-3.2.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+	
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+	    <property name="securityManager" ref="securityManager"/>
+	    <!-- <property name="loginUrl" value="/index"/> -->
+	    <!-- <property name="successUrl" value="/home"/> -->
+	    <!-- <property name="unauthorizedUrl" value="/unauthorized.jsp"/> -->
+	    <!-- The 'filters' property is not necessary since any declared javax.servlet.Filter bean  -->
+	    <!-- defined will be automatically acquired and available via its beanName in chain        -->
+	    <!-- definitions, but you can perform instance overrides or name aliases here if you like: -->
+	    <property name="filters">
+	        <util:map>
+	            <!-- <entry key="logout" value-ref="logoutFilter" /> -->
+	            <entry key="shiroUserFilter" value-ref="shiroUserFilter" />
+	        </util:map>
+	    </property>
+	    <property name="filterChainDefinitions">
+	        <value>
+	            # some example chain definitions:
+	            # /admin/** = authc, roles[admin]
+	            # /docs/** = authc, perms[document:read]
+	            / = anon
+	            /*.html = anon
+	            /**/*.url = anon
+	            /static/** = anon
+	            /account/login.do = anon
+	            /account/logout.do = anon
+	            /authcode/code.do = anon
+	            /account/resetpassword/step1.do = anon
+	            /account/resetpassword/step2.do = anon
+	            /error = anon
+	            /** = shiroUserFilter
+	            # more URL-to-FilterChain definitions here
+	        </value>
+	    </property>
+	</bean>
+	
+	<!-- 扩展的filter -->
+	<bean id="shiroUserFilter" class="com.lenovo.iot.devicemanager.filter.ShiroUserFilter" />
+	
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+	    <!-- Single realm app.  If you have multiple realms, use the 'realms' property instead. -->
+	    <property name="realm" ref="myRealm" />
+	    <!-- By default the servlet container sessions will be used.  Uncomment this line
+	         to use shiro's native sessions (see the JavaDoc for more): -->
+	    <!-- <property name="sessionMode" value="native"/> -->
+	</bean>
+	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+	
+	<!-- Define the Shiro Realm implementation you want to use to connect to your back-end -->
+	<!-- security datasource: -->
+	<bean id="myRealm" class="com.lenovo.iot.devicemanager.service.ShiroJdbcRealm">
+	    <property name="dataSource" ref="dataSource"/>
+	    <property name="permissionsLookupEnabled" value="true"/>
+	</bean>
+	
+	<!-- Enable Shiro Annotations for Spring-configured beans.  Only run after -->
+	<!-- the lifecycleBeanProcessor has run: -->
+	<bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator" depends-on="lifecycleBeanPostProcessor">
+		<property name="proxyTargetClass" value="true" />
+	</bean>
+	<bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+	    <property name="securityManager" ref="securityManager"/>
+	</bean>
+</beans>

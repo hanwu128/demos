@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- DT模板 -->
+<mapper namespace="com.lenovo.iot.digitaltwin.tpl.front">
+    <!--
+        查询DT模板总数
+    -->
+    <select id="getTotal" resultType="java.lang.Integer">
+        select count(1) as total
+        from dt_tpl
+        where name like #{name}
+    </select>
+
+    <!--
+        查询DT模板列表
+    -->
+    <select id="getList" resultMap="dtTplListResultMap">
+        select
+            tp.tplId as tpl_id,
+			tp.tplName as tpl_name,
+			tp.tpldesp as tpl_desp,
+            tp.attrId as attr_num,
+            ins.istId as ist_num,
+			tp.tplctime as tpl_ctime,
+            tp.tplmtime as tpl_mtime
+        from
+			(select tpl.id as tplId, tpl.name as tplName, tpl.desp as tpldesp, tpl.ctime as tplctime, tpl.mtime as tplmtime, count(attr.id) as attrId from dt_tpl as tpl left join dt_tpl_attr as attr on tpl.id = attr.tpl group by tpl.id) tp,
+			(select tpl.id as tplId, tpl.name as tplName, tpl.desp as tpldesp, tpl.ctime as tplctime, tpl.mtime as tplmtime, count(ist.id) as istId from dt_tpl as tpl left join dt_instance as ist on tpl.id = ist.tpl group by tpl.id)ins
+        where tp.tplId = ins.tplId and tp.tpldesp = ins.tpldesp  and tp.tplName = ins.tplName and tp.tplctime = ins.tplctime and tp.tplmtime = ins.tplmtime and tp.tplName like #{name}
+        order by tpl_ctime desc
+        limit #{start}, #{offset}
+    </select>
+    <resultMap id="dtTplListResultMap" type="DigitalTwinTemplate">
+        <id property="id" column="tpl_id" />
+        <result property="name" column="tpl_name" />
+        <result property="desp" column="tpl_desp" />
+        <result property="attrnum" column="attr_num" />
+        <result property="istnum" column="ist_num" />
+        <result property="ctime" column="tpl_ctime" typeHandler="com.lenovo.iot.digitaltwin.handler.Time2LongHandler" />
+        <result property="mtime" column="tpl_mtime" typeHandler="com.lenovo.iot.digitaltwin.handler.Time2LongHandler" />
+    </resultMap>
+
+    <!--
+        查询单个DT模板详情
+    -->
+    <!--<select id="getById" resultMap="dtTplResultMap">
+        select
+            tpl.id as tpl_id,
+            tpl.name as tpl_name,
+            tpl.desp as tpl_desp,
+            tpl.ctime as tpl_ctime,
+            tpl.mtime as tpl_mtime,
+            attr.id as attr_id,
+            attr.tpl as attr_tpl,
+            attr.name as attr_name,
+            attr.displayname as attr_displayname,
+            attr.attrtype as attr_attrtype,
+            attr.datatype as attr_datatype,
+            attr.value as attr_value,
+            attr.unit as attr_unit,
+            attr.ctime as attr_ctime,
+            attr.mtime as attr_mtime
+        from dt_tpl as tpl
+        left join dt_tpl_attr as attr
+        on tpl.id = attr.tpl
+        where tpl.id = #{id};
+    </select>
+    <resultMap id="dtTplResultMap" type="DigitalTwinTemplate">
+        <id property="id" column="tpl_id" />
+        <result property="name" column="tpl_name" />
+        <result property="desp" column="tpl_desp" />
+        <result property="ctime" column="tpl_ctime" typeHandler="com.lenovo.iot.digitaltwin.handler.Time2LongHandler" />
+        <result property="mtime" column="tpl_mtime" typeHandler="com.lenovo.iot.digitaltwin.handler.Time2LongHandler" />
+        <collection property="attr" ofType="DigitalTwinTemplateAttr">
+            <id property="id" column="attr_id" />
+            <result property="tpl" column="attr_tpl" />
+            <result property="name" column="attr_name" />
+            <result property="displayname" column="attr_displayname" />
+            <result property="attrtype" column="attr_attrtype" />
+            <result property="datatype" column="attr_datatype" />
+            <result property="value" column="attr_value" />
+            <result property="unit" column="attr_unit" />
+            <result property="ctime" column="attr_ctime" typeHandler="com.lenovo.iot.digitaltwin.handler.Time2LongHandler" />
+            <result property="mtime" column="attr_mtime" typeHandler="com.lenovo.iot.digitaltwin.handler.Time2LongHandler" />
+        </collection>
+    </resultMap>-->
+
+    <select id="getById" resultMap="dtTplResultMap">
+        select
+            tp.tplId as tpl_id,
+            tp.tplName as tpl_name,
+            tp.tplDesp as tpl_desp,
+            tp.tplCtime as tpl_ctime,
+            tp.tplMtime as tpl_mtime,
+            tp.attrId as attr_id,
+            tp.attrTpl as attr_tpl,
+            tp.attrName as attr_name,
+            tp.attrDisplayname as attr_displayname,
+            tp.attrType as attr_attrtype,
+            tp.attrDatatype as attr_datatype,
+            tp.attrVale as attr_value,
+            tp.attrUnti as attr_unit,
+            tp.attrCtime as attr_ctime,
+            tp.attrMtime as attr_mtime,
+            inst.istSun as ist_istSun
+        from
+            (select dttpl.id as tplId, dttpl.name as tplName, dttpl.desp as tplDesp, dttpl.ctime as tplCtime, dttpl.mtime as tplMtime,
+                attr.id as attrId, attr.tpl as attrTpl, attr.name as attrName, attr.displayname as attrDisplayname, attr.attrtype as attrType,
+                attr.datatype as attrDatatype, attr.value as attrVale, attr.unit as attrUnti, attr.ctime as attrCtime, attr.mtime as attrMtime
+            from dt_tpl as dttpl left join dt_tpl_attr as attr on dttpl.id = attr.tpl)tp,
+            (select dttpl.id as tplId, dttpl.name as tplName, dttpl.desp as tplDesp, dttpl.ctime as tplCtime, dttpl.mtime as tplMtime, count(ist.id) as istSun
+            from dt_tpl as dttpl left join dt_instance as ist on dttpl.id = ist.tpl group by dttpl.id) inst
+        where
+            tp.tplId = inst.tplId and
+            tp.tplName = inst.tplName and
+            tp.tplDesp = inst.tplDesp and
+            tp.tplCtime = inst.tplCtime and
+            tp.tplMtime = inst.tplMtime and tp.tplId = #{id};
+    </select>
+    <resultMap id="dtTplResultMap" type="DigitalTwinTemplate">
+        <id property="id" column="tpl_id" />
+        <result property="name" column="tpl_name" />
+        <result property="desp" column="tpl_desp" />
+        <result property="ctime" column="tpl_ctime" typeHandler="com.lenovo.iot.digitaltwin.handler.Time2LongHandler" />
+        <result property="mtime" column="tpl_mtime" typeHandler="com.lenovo.iot.digitaltwin.handler.Time2LongHandler" />
+        <result property="istnum" column="ist_istSun" />
+        <collection property="attr" ofType="DigitalTwinTemplateAttr">
+            <id property="id" column="attr_id" />
+            <result property="tpl" column="attr_tpl" />
+            <result property="name" column="attr_name" />
+            <result property="displayname" column="attr_displayname" />
+            <result property="attrtype" column="attr_attrtype" />
+            <result property="datatype" column="attr_datatype" />
+            <result property="value" column="attr_value" />
+            <result property="unit" column="attr_unit" />
+            <result property="ctime" column="attr_ctime" typeHandler="com.lenovo.iot.digitaltwin.handler.Time2LongHandler" />
+            <result property="mtime" column="attr_mtime" typeHandler="com.lenovo.iot.digitaltwin.handler.Time2LongHandler" />
+        </collection>
+    </resultMap>
+
+    <!--
+        按名称查询
+    -->
+    <select id="getByName" resultType="DigitalTwinTemplate">
+        select id,name from dt_tpl where name=#{name}
+    </select>
+
+    <!--
+        添加DT模板
+    -->
+    <insert id="add" parameterType="DigitalTwinTemplate" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        insert into dt_tpl(name,desp,ctime,mtime) values(#{name},#{desp},now(),now())
+    </insert>
+
+    <!--
+        编辑DT模板
+    -->
+    <update id="update" parameterType="DigitalTwinTemplate">
+        update dt_tpl set name = #{name}, desp = #{desp}, mtime = now() where id = #{id}
+    </update>
+
+    <!--
+        删除DT模板，支持批量删除
+    -->
+    <delete id="delete" parameterType="java.util.List">
+        delete from dt_tpl where id IN (
+        <foreach collection="list" item="id" separator=",">
+            #{id}
+        </foreach>
+        )
+    </delete>
+
+</mapper>

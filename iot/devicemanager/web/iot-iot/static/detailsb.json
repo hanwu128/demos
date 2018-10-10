@@ -1,0 +1,51 @@
+{
+  "code": 200,
+  "createtimestamp": 1526030807000,
+  "describemessage": "xxx update",
+  "digitaltwinname": "digital twin name update",
+  "id": 15,
+  "updatetimestamp": 1526030807000,
+  "data": {
+    "attrList": [
+      {
+        "createtimestamp": 1526027723000,
+        "daddyid": 15,
+        "describemessage": "yyy update",
+        "digitaltwinname": "digital twin name update",
+        "expectedvalue": 0,
+        "id": 29,
+        "metric": "metricnamey update",
+        "sonname": "yyy update",
+        "tagkv": {
+          "tagk1": "tagv3",
+          "tagk2": "tagv3",
+          "tagk3": "tagv3",
+          "tagk4": "tagv4"
+        },
+        "unit": "yyy update",
+        "updatetimestamp": 1526027723000,
+        "value": 0
+      },
+      {
+        "createtimestamp": 1526027723000,
+        "daddyid": 15,
+        "describemessage": "xxx update",
+        "digitaltwinname": "digital twin name update",
+        "expectedvalue": 0,
+        "id": 28,
+        "metric": "metricnamex update",
+        "sonname": "xxx update",
+        "tagkv": {
+          "tagk1": "tagv3 update",
+          "tagk2": "tagv3",
+          "tagk3": "tagv3",
+          "tagk4": "tagv4 update"
+        },
+        "unit": "xxx update",
+        "updatetimestamp": 1526027723000,
+        "value": 0
+      }
+    ]
+  },
+  "message": "success"
+}

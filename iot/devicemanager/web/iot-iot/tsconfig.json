@@ -1,0 +1,91 @@
+{
+  "chart": {
+    "type": "spline",
+    "animation": true,
+    "marginRight": 10,
+    "events": {}
+  },
+  "credits": {
+    "enabled": false
+  },
+  "colors": [
+    "#fbc32e",
+    "#00a6c0",
+    "#917ae4",
+    "#fb9170",
+    "#7adb78"
+  ],
+  "title": {
+    "text": ""
+  },
+  "tooltip": {},
+  "xAxis": {
+    "categories": [
+      "16:17:34",
+      "16:17:39",
+      "16:17:44",
+      "16:17:49",
+      "16:17:54",
+      "16:17:59",
+      "16:18:04",
+      "16:18:09"
+
+    ],
+    "labels": {
+      "step": 1,
+      "staggerLines": 1,
+      "rotation": 0
+    },
+    "tickmarkPlacement": "on"
+  },
+  "yAxis": {
+    "title": {
+      "text": ""
+    },
+    "labels": {
+      "style": {
+        "fontWeight": "normal",
+        "fontFamily": "微软雅黑",
+        "fontSize": "12px"
+      }
+    },
+    "allowDecimals": false,
+    "max": 30
+  },
+  "legend": {
+    "enabled": true
+  },
+  "exporting": {
+    "enabled": false
+  },
+  "series": [
+    {
+      "data": [
+        25.86,
+        26.04,
+        24.92,
+        26.78,
+        24.5,
+        25.75,
+        24.94,
+        26.78
+      ],
+      "name": "储物仓A(6001)",
+      "label_name": "储物仓A(6001)"
+    },
+    {
+      "data": [
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30,
+        30
+      ],
+      "name": "最高温度",
+      "label_name": "最高温度"
+    }
+  ]
+}

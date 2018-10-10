@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lenovo.iot.devicemanager.dao.IRulerDao">
+	<insert id="doInsertruler" useGeneratedKeys="true" keyProperty="id" parameterType="RulerVO">
+	INSERT INTO
+		ruler(
+					 `appid`,
+					  appsourceid,
+					  attributename,
+					  mathematicalsymbol,
+					  rightvalue,
+					  expressionstatement,
+					  logicalsymbol,
+					  groupid,
+					  groupinnerindex,
+					  attributevaluetype
+					  )
+	VALUES
+		(#{appid},
+		 #{appsourceid},
+		 #{attributename},
+		 #{mathematicalsymbol},
+		 #{rightvalue},
+		 #{expressionstatement},
+		 #{logicalsymbol},
+		 #{groupid},
+		 #{groupinnerindex},
+		 #{attributevaluetype}
+		)
+	</insert>
+
+	<select id="findAllApacheAdgentMetaData" resultType="com.lenovo.iot.devicemanager.model.bo.ApacheAdgentMetaData">
+		SELECT 
+			id,
+			`json_version`,
+			hardware_manufactor,
+			hardware_model,
+			hardware_device_id,
+			hardware_location,
+			customer_id,
+			hardware_os,
+			hardware_os_version,
+			firmware_version,
+			app_key,
+			edgent_agent_version,
+			edgent_agent_app_list,
+			console_url,
+			timestampat
+
+		FROM 
+			apacheadgentmetadata t
+	</select>
+
+	<select id="findRulerByParameter" resultType="com.lenovo.iot.devicemanager.model.bo.RulerVO" parameterType="RulerVO">
+		SELECT
+		id,
+		appid,
+		appsourceid,
+		attributename,
+		mathematicalsymbol,
+		rightvalue,
+		expressionstatement,
+		logicalsymbol,
+		groupid,
+		groupinnerindex,
+		attributevaluetype
+		FROM
+		ruler t
+
+		WHERE
+		1 = 1
+		<if test="groupid != null and groupid != ''">
+			AND  groupid = #{groupid}
+		</if>
+
+
+
+	</select>
+
+
+
+	<select id="findApacheAdgentMetaDataByParameterdeviceid" resultType="com.lenovo.iot.devicemanager.model.bo.ApacheAdgentMetaData" parameterType="ApacheAdgentMetaData">
+		SELECT
+		id,
+		`json_version`,
+		hardware_manufactor,
+		hardware_model,
+		hardware_device_id,
+		hardware_location,
+		customer_id,
+		hardware_os,
+		hardware_os_version,
+		firmware_version,
+		app_key,
+		edgent_agent_version,
+		edgent_agent_app_list,
+		console_url,
+		timestampat
+
+		FROM
+		apacheadgentmetadata t
+
+		WHERE
+		1 = 1
+		<if test="hardware_device_id != null and hardware_device_id != ''">
+			AND hardware_device_id = #{hardware_device_id}
+		</if>
+
+
+
+	</select>
+
+
+
+	<update id="doUpdateApacheAdgentMetaData" parameterType="com.lenovo.iot.devicemanager.model.bo.ApacheAdgentMetaData">
+		UPDATE apacheadgentmetadata
+		<set>
+			<if test="json_version != null and json_version != ''">
+				json_version = #{json_version},
+			</if>
+
+			<if test="hardware_manufactor != null and hardware_manufactor != ''">
+				hardware_manufactor = #{hardware_manufactor},
+			</if>
+
+			<if test="hardware_model != null and hardware_model != ''">
+				hardware_model = #{hardware_model},
+			</if>
+
+			<if test="hardware_device_id != null and hardware_device_id != ''">
+				hardware_device_id = #{hardware_device_id},
+			</if>
+
+			<if test="hardware_location != null and hardware_location != ''">
+				hardware_location = #{hardware_location},
+			</if>
+
+			<if test="customer_id != null and customer_id != ''">
+				customer_id = #{customer_id},
+			</if>
+
+			<if test="hardware_os != null and hardware_os != ''">
+				hardware_os = #{hardware_os},
+			</if>
+
+			<if test="hardware_os_version != null and hardware_os_version != ''">
+				hardware_os_version = #{hardware_os_version},
+			</if>
+
+			<if test="firmware_version != null and firmware_version != ''">
+				firmware_version = #{firmware_version},
+			</if>
+
+			<if test="app_key != null and app_key != ''">
+				app_key = #{app_key},
+			</if>
+
+			<if test="edgent_agent_version != null and edgent_agent_version != ''">
+				edgent_agent_version = #{edgent_agent_version},
+			</if>
+
+			<if test="edgent_agent_app_list != null and edgent_agent_app_list != ''">
+				edgent_agent_app_list = #{edgent_agent_app_list},
+			</if>
+
+			<if test="console_url != null and console_url != ''">
+				console_url = #{console_url },
+			</if>
+
+			<if test="timestampat != null and timestampat != 0 ">
+				timestampat = #{timestampat},
+			</if>
+		</set>
+
+		WHERE id = #{id}
+	</update>
+
+
+
+
+
+</mapper>

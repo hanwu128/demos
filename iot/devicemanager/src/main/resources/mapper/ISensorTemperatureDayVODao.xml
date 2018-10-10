@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lenovo.iot.devicemanager.dao.ISensorTemperatureDayVODao">
+	<insert id="doInsertApacheAdgentMetaData" useGeneratedKeys="true" keyProperty="id" parameterType="ApacheAdgentMetaData">
+	INSERT INTO
+		apacheadgentmetadata(
+					 `json_version`,
+					  hardware_manufactor,
+					  hardware_model,
+					  hardware_device_id,
+					  hardware_location,
+					  customer_id,
+					  hardware_os,
+					  hardware_os_version,
+					  firmware_version,
+					  app_key,
+					  edgent_agent_version,
+					  edgent_agent_app_list,
+					  console_url,
+					  timestampat
+					  )
+	VALUES
+		(#{json_version},
+		 #{hardware_manufactor},
+		 #{hardware_model},
+		 #{hardware_device_id},
+		 #{hardware_location},
+		 #{customer_id},
+		 #{hardware_os},
+		 #{hardware_os_version},
+		 #{firmware_version},
+		 #{app_key},
+		 #{edgent_agent_version},
+		 #{edgent_agent_app_list},
+		 #{console_url},
+		 #{timestampat}
+		)
+	</insert>
+
+	<select id="findAllApacheAdgentMetaData" resultType="com.lenovo.iot.devicemanager.model.bo.ApacheAdgentMetaData">
+		SELECT 
+			id,
+			`json_version`,
+			hardware_manufactor,
+			hardware_model,
+			hardware_device_id,
+			hardware_location,
+			customer_id,
+			hardware_os,
+			hardware_os_version,
+			firmware_version,
+			app_key,
+			edgent_agent_version,
+			edgent_agent_app_list,
+			console_url,
+			timestampat
+
+		FROM 
+			apacheadgentmetadata t
+	</select>
+
+	<select id="findSensorTemperatureDayCountByParameter" resultType="Integer" parameterType="SensorTemperatureDayVO">
+		SELECT COUNT(*)
+		FROM
+		sensor_temperature_day t
+		LEFT JOIN sensor_label tt
+		ON t.label_id = tt.label_id
+
+
+		WHERE
+		1 = 1
+		<if test="what_day != null and what_day != '' ">
+			AND  t.what_day = #{what_day}
+		</if>
+
+		<if test="device_id != null and device_id != '' ">
+			AND  tt.device_id = #{device_id}
+		</if>
+
+	</select>
+
+
+	<select id="findSensorTemperatureDayVOByParameter" resultType="com.lenovo.iot.devicemanager.model.bo.SensorTemperatureDayVO" parameterType="SensorTemperatureDayVO">
+		SELECT
+		FROM_UNIXTIME(unix_timestamp(t.update_stamp),'%H:%i:%S') as updatestampstrshow,
+		FROM_UNIXTIME(unix_timestamp(t.max_stamp),'%H:%i:%S') as maxstampshow,
+		FROM_UNIXTIME(unix_timestamp(t.min_stamp),'%H:%i:%S') as minstampshow,
+		t.max_stamp,
+		t.min_stamp,
+		t.id,
+		t.label_id,
+		t.current_value,
+		t.max_value,
+		t.min_value,
+		t.what_day,
+		t.update_stamp,
+		tt.label_name,
+		tt.label_index,
+		tt.device_id,
+		tt.create_stamp,
+		(t.current_value - t.last_value) as difference,
+		ifnull(t.status, 0) as status,
+		ifnull(t.last_status, 0) as last_status
+		FROM
+		sensor_temperature_day t
+		LEFT JOIN sensor_label tt
+		ON t.label_id = tt.label_id
+
+
+		WHERE
+		1 = 1
+		<if test="what_day != null and what_day != '' ">
+			AND  t.what_day = #{what_day}
+		</if>
+
+		<if test="device_id != null and device_id != '' ">
+			AND  tt.device_id = #{device_id}
+		</if>
+		
+		ORDER BY t.label_id
+
+		<if test="limitStart != -1 and limitEnd != 0 ">
+			limit #{limitStart} , #{limitEnd}
+		</if>
+	</select>
+
+
+
+
+
+	<select id="findSensorTemperatureHistoryByParameters" resultType="com.lenovo.iot.devicemanager.model.bo.SensorTemperatureHistory" parameterType="SensorTemperatureHistory">
+		SELECT
+		*
+		FROM
+		sensor_temperature_history
+		WHERE
+		1=1
+
+		<if test="startTimeAt != null and what_day != '' ">
+			AND unix_timestamp(create_stamp) &gt; unix_timestamp(TIMESTAMP(date(#{what_day})))
+			AND unix_timestamp(create_stamp) &lt; unix_timestamp(TIMESTAMP(adddate(date(#{what_day}), 1)))
+		</if>
+
+		<if test="label_id != null and label_id != '' ">
+			AND label_id = #{label_id}
+		</if>
+
+	</select>
+
+
+
+	<select id="findSensorTemperatureHistoryByParametersDesc" resultType="com.lenovo.iot.devicemanager.model.bo.SensorTemperatureHistory" parameterType="SensorTemperatureHistory">
+		SELECT
+		<!-- FROM_UNIXTIME(unix_timestamp(t.create_stamp),'%Y-%m-%d %H:%i:%S') as createstampshow, -->
+		FROM_UNIXTIME(unix_timestamp(t.create_stamp),'%H:%i:%S') as createstampshow,
+		t.id,
+		t.label_id,
+		t.value,
+		t.create_stamp,
+		tt.label_name,
+		tt.device_id,
+		ttt.group_name
+		FROM
+		sensor_temperature_history t
+		LEFT JOIN sensor_label tt
+		ON t.label_id = tt.label_id
+		LEFT JOIN sensor_group ttt ON tt.label_group = ttt.group_id
+
+		WHERE
+		1=1
+
+		<if test="startTimeAt != null and startTimeAt != '' and endTimeAt != null and endTimeAt != '' ">
+			AND unix_timestamp(t.create_stamp) &gt; unix_timestamp(TIMESTAMP(date(#{startTimeAt})))
+			AND unix_timestamp(t.create_stamp) &lt; unix_timestamp(TIMESTAMP(date(#{endTimeAt})))
+		</if>
+		<if test="label_id != null and label_id != '' ">
+			AND t.label_id = #{label_id}
+		</if>
+
+		ORDER BY t.create_stamp DESC
+
+		<if test="limitStart != -1 and limitEnd != 0 ">
+			limit #{limitStart} , #{limitEnd}
+		</if>
+
+	</select>
+
+
+
+	<select id="findSensorTemperatureHistoryByParametersZLineChart" resultType="com.lenovo.iot.devicemanager.model.bo.SensorTemperatureHistory" parameterType="SensorTemperatureHistory">
+		SELECT
+		<!-- FROM_UNIXTIME(unix_timestamp(t.create_stamp),'%Y-%m-%d %H:%i:%S') as createstampshow, -->
+		count(*) as total ,
+		FROM_UNIXTIME(unix_timestamp(t.create_stamp),'%H') as createstampshow,
+		t.create_stamp
+		FROM
+		sensor_temperature_history t
+		LEFT JOIN sensor_label tt
+		ON t.label_id = tt.label_id
+		LEFT JOIN sensor_group ttt ON tt.label_group = ttt.group_id
+
+		WHERE
+		1=1
+
+		<if test="startTimeAt != null and startTimeAt != '' and endTimeAt != null and endTimeAt != '' ">
+			AND unix_timestamp(t.create_stamp) &gt; unix_timestamp(TIMESTAMP(date(#{startTimeAt})))
+			AND unix_timestamp(t.create_stamp) &lt; unix_timestamp(TIMESTAMP(date(#{endTimeAt})))
+		</if>
+		<if test="label_id != null and label_id != '' ">
+			AND t.label_id = #{label_id}
+		</if>
+
+		<if test="device_id != null and device_id != '' ">
+			AND tt.device_id = #{device_id}
+		</if>
+
+
+		GROUP BY  createstampshow
+		ORDER BY t.create_stamp DESC
+
+		<if test="limitStart != -1 and limitEnd != 0 ">
+			limit #{limitStart} , #{limitEnd}
+		</if>
+
+	</select>
+
+
+
+
+
+
+
+	<select id="findSensorTemperatureHistoryByParametersPieChart" resultType="com.lenovo.iot.devicemanager.model.bo.SensorTemperatureHistory" parameterType="SensorTemperatureHistory">
+		SELECT count(*) as total,
+		FROM_UNIXTIME(unix_timestamp(create_stamp),'%H:%i') as createstampshow
+		from
+		sensor_temperature_history
+		WHERE  create_stamp &gt;  TIMESTAMP(#{startTimeAt})
+		AND create_stamp &lt;  TIMESTAMP(#{endTimeAt})
+		<if test="device_id != null and device_id != '' ">
+			AND device_id = #{device_id}
+		</if>
+		GROUP BY createstampshow
+		ORDER BY createstampshow
+	</select>
+
+
+
+
+
+
+
+
+
+
+
+
+	<select id="findSensorTemperatureMinitueByParametersReport" resultType="com.lenovo.iot.devicemanager.model.bo.SensorTemperatureMinitue" parameterType="SensorTemperatureMinitue">
+		SELECT
+		t.id,
+		t.label_id,
+		t.label_value,
+		t.what_day,
+		t.what_minitue,
+		t.update_stamp,
+		tt.label_name as label_name
+		FROM
+		sensor_temperature_minitue t
+		LEFT JOIN sensor_label tt on t.label_id = tt.label_id
+		WHERE
+		1 = 1
+
+		<if test="what_day != null and what_day != '' ">
+			AND t.what_day =  #{what_day}
+		</if>
+		<if test="label_id != null and label_id != '' ">
+			AND t.label_id = #{label_id}
+		</if>
+
+		ORDER BY
+		t.what_minitue
+
+	</select>
+
+
+
+</mapper>
