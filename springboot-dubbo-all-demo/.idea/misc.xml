@@ -7,6 +7,8 @@
           <entry key="fixes.SpringFacetInspection.AddFacetFix" value="1" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
     </session>
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq_parent/rabbitmq_parent.iml" filepath="$PROJECT_DIR$/rabbitmq_parent/rabbitmq_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-rabbitmq-direct-consumer/springboot-rabbitmq-direct-consumer.iml" filepath="$PROJECT_DIR$/springboot-rabbitmq-direct-consumer/springboot-rabbitmq-direct-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-rabbitmq-direct-provider/springboot-rabbitmq-direct-provider.iml" filepath="$PROJECT_DIR$/springboot-rabbitmq-direct-provider/springboot-rabbitmq-direct-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-rabbitmq-fanout-consumer/springboot-rabbitmq-fanout-consumer.iml" filepath="$PROJECT_DIR$/springboot-rabbitmq-fanout-consumer/springboot-rabbitmq-fanout-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq_parent/springboot-rabbitmq-fanout-consumer.iml" filepath="$PROJECT_DIR$/rabbitmq_parent/springboot-rabbitmq-fanout-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-rabbitmq-fanout-provider/springboot-rabbitmq-fanout-provider.iml" filepath="$PROJECT_DIR$/springboot-rabbitmq-fanout-provider/springboot-rabbitmq-fanout-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-rabbitmq-topic-consumer/springboot-rabbitmq-topic-consumer.iml" filepath="$PROJECT_DIR$/springboot-rabbitmq-topic-consumer/springboot-rabbitmq-topic-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-rabbitmq-topic-provider/springboot-rabbitmq-topic-provider.iml" filepath="$PROJECT_DIR$/springboot-rabbitmq-topic-provider/springboot-rabbitmq-topic-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot_mq/springboot_mq.iml" filepath="$PROJECT_DIR$/springboot_mq/springboot_mq.iml" />
+    </modules>
+  </component>
+</project>

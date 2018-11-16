@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hw.blog.dao.Userdao">
+
+    <resultMap id="user" type="com.hw.blog.model.User">
+        <result column="user_id" property="id"/>
+        <result column="user_ip" property="ip"/>
+        <result column="user_name" property="name"/>
+        <result column="user_password" property="password"/>
+        <result column="user_email" property="email"/>
+        <result column="user_profile_photo" property="profilePhone"/>
+        <result column="user_level" property="level"/>
+        <result column="user_rights" property="rights"/>
+        <result column="user_registration_time" property="registrationTime"/>
+        <result column="user_birthday" property="birthday"/>
+        <result column="user_age" property="age"/>
+        <result column="user_telephone_number" property="telephoneNumber"/>
+        <result column="user_nickname" property="nickname"/>
+        <result column="user_activate" property="activate"/>
+        <result column="user_code" property="code"/>
+        <result column="user_del" property="del"/>
+    </resultMap>
+    <!--user_id,user_ip,user_name,user_password,user_email,user_profile_photo,user_level,user_rights,user_registration_time,user_birthday,user_age,user_telephone_number,user_nickname-->
+    <select id="getTotal" resultType="java.lang.Integer" parameterType="hashmap">
+        select count(0) count from hw_users
+        <if test=" name != null and '' != name ">
+            where user_name like #{name}
+        </if>
+    </select>
+
+    <select id="getList" resultMap="user" parameterType="hashmap">
+        select
+        user_id,user_ip,user_name,user_email,user_level,user_rights,user_registration_time,user_birthday,user_age,user_telephone_number,user_nickname
+        from hw_users limit
+        <if test=" name != null and '' != name ">
+            where user_name like #{name}
+        </if>
+        #{start},#{offset}
+    </select>
+
+    <select id="getById" resultMap="user" parameterType="hashmap">
+		select user_id,user_ip,user_name,user_email,user_profile_photo,user_level,user_rights,user_registration_time,user_birthday,user_age,user_telephone_number,user_nickname
+		from hw_users where user_id = #{id}
+	</select>
+
+    <insert id="addUser" parameterType="user" useGeneratedKeys="true"
+            keyProperty="cer_id"
+            keyColumn="id">
+        insert into hw_users(user_ip,user_name,user_password,user_email,user_profile_photo,user_level,user_rights,user_registration_time,user_birthday,user_age,user_telephone_number,user_nickname,user_activate,user_code)
+        values(#{ip},#{name},#{password},#{email},#{profilePhone},#{level},#{rights},#{registrationTime},#{birthday},#{age},#{telephoneNumber},#{nickname},#{activate},#{code})
+    </insert>
+
+    <update id="updateUser" parameterType="User" useGeneratedKeys="true" keyProperty="company_id" keyColumn="id">
+        update hw_users set user_ip = #{ip}, user_name = #{name}, where user_id = #{id}
+    </update>
+
+    <select id="getPasswordById" resultMap="user" parameterType="hashmap">
+		select user_id,user_name,user_email,user_telephone_number,user_nickname
+		from hw_users where user_id = #{id}
+	</select>
+
+    <update id="updatePassword" parameterType="hashmap">
+        update hw_users set user_password = #{password} where user_id = #{id}
+    </update>
+
+    <update id="activateUser" parameterType="java.lang.String">
+        update hw_users set user_activate = 1 where user_code = #{code}
+    </update>
+
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="rabbitmq_parent" />
+        <module name="springboot-rabbitmq-direct-consumer" />
+        <module name="springboot-rabbitmq-direct-provider" />
+        <module name="springboot-rabbitmq-fanout-consumer" />
+        <module name="springboot-rabbitmq-fanout-provider" />
+        <module name="springboot-rabbitmq-topic-consumer" />
+        <module name="springboot-rabbitmq-topic-provider" />
+        <module name="springboot_mq" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="rabbitmq_parent" target="1.8" />
+      <module name="springboot-rabbitmq-direct-consumer" target="1.8" />
+      <module name="springboot-rabbitmq-direct-provider" target="1.8" />
+      <module name="springboot-rabbitmq-fanout-consumer" target="1.8" />
+      <module name="springboot-rabbitmq-fanout-provider" target="1.8" />
+      <module name="springboot-rabbitmq-topic-consumer" target="1.8" />
+      <module name="springboot-rabbitmq-topic-provider" target="1.8" />
+      <module name="springboot_mq" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

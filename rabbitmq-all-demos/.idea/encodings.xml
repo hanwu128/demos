@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/rabbitmq_parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq-direct-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq-direct-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq-fanout-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq-fanout-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq-topic-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq-topic-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot_mq" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

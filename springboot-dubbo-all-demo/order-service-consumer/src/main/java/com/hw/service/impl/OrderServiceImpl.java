@@ -20,8 +20,8 @@ public class OrderServiceImpl implements OrderService {
     @Autowired
     UserService userService;
 
-    @Override
     public List<UserAddress> initOrder(String userId) {
+        @Override
 
         //1、查询用户的收货地址
         List<UserAddress> addressList = userService.getUserAddressList(userId);

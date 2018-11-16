@@ -1,9 +1,0 @@
-D:\项目\iot-hao\iot\devicemanager/src备份   工业物联网分析demo（冷链内容）  http://223.203.218.93/demo/#/application/dataOverview
-
-D:\项目\iot-hao\iot\devicemanager\vue_iot\src  工业物联网分析平台整个   http://223.203.218.93/devicemanager/#/login
-
-D:\项目\iot-hao\iot\devicemanager\vue_iot\iot-src 工业物联网分析平台demo（设备镜像管理内容）http://223.203.218.93/iot/#/login
-
-
-注：修改项目链接，打包的时候要修改
-  D:\项目\iot-hao\iot\devicemanager\vue_iot\config\index.js  里面的 assetsPublicPath: '/iot/',   （改为对应项目链接的路径）

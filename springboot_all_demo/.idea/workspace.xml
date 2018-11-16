@@ -37,81 +37,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Springboot06DubboTicketApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-ticket/src/main/java/com/example/Springboot06DubboTicketApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-              <folding>
-                <element signature="e#371#372#0" expanded="true" />
-                <element signature="e#456#457#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TicketServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-ticket/src/main/java/com/example/ticket/service/TicketServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-user/src/main/java/com/example/user/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TicketService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-user/src/main/java/com/example/ticket/service/TicketService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-user/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-ticket/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Springboot06DubboUserApplicationTests.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-user/src/test/java/com/example/Springboot06DubboUserApplicationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="10" column="1" selection-start-line="10" selection-end-line="10" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Springboot06DubboUserApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-user/src/main/java/com/example/Springboot06DubboUserApplication.java">
+      <file leaf-file-name="Springboot05SecurityApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/main/java/com/example/security/Springboot05SecurityApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
-              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/welcome.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Springboot04TaskApplicationTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../springboot-04-task/src/test/java/com/example/task/Springboot04TaskApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaMailSender.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/5.0.9.RELEASE/spring-context-support-5.0.9.RELEASE-sources.jar!/org/springframework/mail/javamail/JavaMailSender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Springboot04TaskApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../springboot-04-task/src/main/java/com/example/task/Springboot04TaskApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AsyncController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../springboot-04-task/src/main/java/com/example/task/controller/AsyncController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AsyncService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../springboot-04-task/src/main/java/com/example/task/service/AsyncService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScheduledService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../springboot-04-task/src/main/java/com/example/task/service/ScheduledService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../springboot-04-task/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="3" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../springboot-04-task/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -131,6 +142,8 @@
       <find>keyGenerator</find>
       <find>BookRepository</find>
       <find>ElasticsearchRepository</find>
+      <find>userlogin</find>
+      <find>hw_128</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -154,7 +167,6 @@
         <option value="$PROJECT_DIR$/../springboot-04-task/src/main/java/com/example/task/Springboot04TaskApplication.java" />
         <option value="$PROJECT_DIR$/../springboot-04-task/src/main/java/com/example/task/service/ScheduledService.java" />
         <option value="$PROJECT_DIR$/../springboot-04-task/pom.xml" />
-        <option value="$PROJECT_DIR$/../springboot-04-task/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/../springboot-04-task/src/test/java/com/example/task/Springboot04TaskApplicationTests.java" />
         <option value="$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/pages/1.html" />
         <option value="$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/pages/level1/1.html" />
@@ -171,7 +183,6 @@
         <option value="$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/pages.level3/3.html" />
         <option value="$PROJECT_DIR$/../springboot-05-security/src/main/java/com/example/security/controller/KungfuController.java" />
         <option value="$PROJECT_DIR$/../springboot-05-security/src/main/java/com/example/security/Springboot05SecurityApplication.java" />
-        <option value="$PROJECT_DIR$/../springboot-05-security/pom.xml" />
         <option value="$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/welcome.html" />
         <option value="$PROJECT_DIR$/../springboot-05-security/src/main/java/com/example/security/config/MySecurityConfig.java" />
         <option value="$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/pages/login.html" />
@@ -194,6 +205,8 @@
         <option value="$PROJECT_DIR$/../springboot-06-dubbo-user/src/main/java/com/example/user/UserService.java" />
         <option value="$PROJECT_DIR$/../springboot-06-dubbo-ticket/src/main/java/com/example/ticket/service/TicketServiceImpl.java" />
         <option value="$PROJECT_DIR$/../springboot-06-dubbo-ticket/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/../springboot-05-security/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot-04-task/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -243,88 +256,50 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-06-dubbo-ticket" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-04-task" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-06-dubbo-ticket" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-04-task" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-06-dubbo-ticket" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-06-dubbo-ticket" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-06-dubbo-ticket" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-06-dubbo-ticket" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-06-dubbo-ticket" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-06-dubbo-user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-06-dubbo-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-06-dubbo-user" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-04-task" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-06-dubbo-user" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-04-task" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-06-dubbo-user" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-04-task" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="task" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-06-dubbo-user" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-04-task" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springboot-04-task" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -332,45 +307,38 @@
             </path>
             <path>
               <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-06-dubbo-user" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-06-dubbo-user" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-04-task" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-06-dubbo-user" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-04-task" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-06-dubbo-user" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-04-task" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springboot_all_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springboot-06-dubbo-user" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-04-task" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="task" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -418,7 +386,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Springboot06DubboUserApplicationTests.contextLoads">
+  <component name="RunManager" selected="JUnit.Springboot04TaskApplicationTests.contextLoads">
     <configuration name="Springboot05SecurityApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.security.Springboot05SecurityApplication" />
       <module name="springboot-05-security" />
@@ -714,11 +682,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Springboot04TaskApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.Springboot04TaskApplicationTests.test02" />
+        <item itemvalue="Application.Springboot05SecurityApplication" />
         <item itemvalue="JUnit.Springboot06DubboUserApplicationTests.contextLoads" />
         <item itemvalue="Application.Springboot06DubboTicketApplication" />
-        <item itemvalue="Application.Springboot05SecurityApplication" />
-        <item itemvalue="JUnit.Springboot04TaskApplicationTests.test02" />
-        <item itemvalue="JUnit.Springboot04TaskApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
   </component>
@@ -745,16 +713,18 @@
       <workItem from="1538982675481" duration="204000" />
       <workItem from="1538982945816" duration="2107000" />
       <workItem from="1538992820386" duration="81000" />
+      <workItem from="1539655033953" duration="3254000" />
+      <workItem from="1539770972114" duration="2074000" />
+      <workItem from="1541991713143" duration="1315000" />
+      <workItem from="1542001405578" duration="3047000" />
+      <workItem from="1542008714996" duration="14000" />
+      <workItem from="1542194261340" duration="14000" />
+      <workItem from="1542194640352" duration="216000" />
+      <workItem from="1542246670078" duration="350000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Springboot03ElasticsearchApplicationTests_test02 - 2018.09.30 at 14h 12m 45s.xml">
-      <configuration name="Springboot03ElasticsearchApplicationTests.test02" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Springboot04TaskApplicationTests_contextLoads - 2018.09.30 at 15h 09m 50s.xml">
-      <configuration name="Springboot04TaskApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Springboot04TaskApplicationTests_test02 - 2018.09.30 at 15h 20m 29s.xml">
       <configuration name="Springboot04TaskApplicationTests.test02" configurationId="JUnit" />
     </history-entry>
@@ -779,9 +749,15 @@
     <history-entry file="Springboot06DubboUserApplicationTests_contextLoads - 2018.10.08 at 18h 01m 36s.xml">
       <configuration name="Springboot06DubboUserApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Springboot04TaskApplicationTests_test02 - 2018.11.15 at 09h 55m 36s.xml">
+      <configuration name="Springboot04TaskApplicationTests.test02" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Springboot04TaskApplicationTests_contextLoads - 2018.11.15 at 09h 56m 31s.xml">
+      <configuration name="Springboot04TaskApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70266000" />
+    <option name="totallyTimeSpent" value="80550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -798,20 +774,19 @@
       <window_info id="Structure" order="1" sideWeight="0.5006993" side_tool="true" weight="0.24485861" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.85314685" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32867134" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32867134" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993007" visible="true" weight="0.24807198" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4993007" visible="true" weight="0.19987147" />
       <window_info anchor="right" id="Bean Validation" order="4" weight="0.32969153" />
-      <window_info id="ZooKeeper" order="3" weight="0.32969153" />
       <window_info id="Web" order="2" sideWeight="0.5006993" side_tool="true" weight="0.24485861" />
       <window_info anchor="right" id="BPMNPalette" order="3" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32969153" />
@@ -819,10 +794,11 @@
       <window_info id="Favorites" order="2" sideWeight="0.5006993" side_tool="true" weight="0.24485861" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
+      <window_info id="ZooKeeper" order="3" weight="0.32969153" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -845,70 +821,6 @@
     <option name="tooltip" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../springboot-03-elasticsearch/src/test/java/com/example/elastic/Springboot03ElasticsearchApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-03-elasticsearch/src/main/java/com/example/elastic/bean/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-03-elasticsearch/src/main/java/com/example/elastic/repository/BookRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-03-elasticsearch/src/main/java/com/example/elastic/Springboot03ElasticsearchApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-04-task/src/main/java/com/example/task/Springboot04TaskApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-04-task/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-04-task/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-04-task/src/test/java/com/example/task/Springboot04TaskApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="42" column="54" selection-start-line="42" selection-start-column="54" selection-end-line="42" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/level2/1.html" />
-    <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/pages/level1/3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/pages/level2/2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -939,9 +851,6 @@
           <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="37" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/pages/level3/2.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -978,77 +887,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/main/java/com/example/security/Springboot05SecurityApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-05-security/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="49" column="56" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/welcome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/pages/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../springboot-01-cache/src/sql/spring_cache.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-04-task/src/main/java/com/example/task/service/AsyncService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-04-task/src/main/java/com/example/task/controller/AsyncController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-04-task/src/main/java/com/example/task/service/ScheduledService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/main/java/com/example/security/controller/KungfuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo/src/main/java/com/example/dubbo/service/TicketService.java" />
     <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo/src/main/java/com/example/dubbo/service/TicketServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/main/java/com/example/security/config/MySecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-user/src/main/java/com/example/ticket/service/Userservice.java" />
     <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-user/src/main/java/com/example/ticket/service/TicketServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-user/src/main/java/com/example/ticket/service/TicketService.java">
@@ -1060,13 +903,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-user/src/test/java/com/example/user/Springboot06DubboUserApplicationTests.java" />
     <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-user/src/main/java/com/example/service/TicketServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-ticket/src/main/java/com/example/ticket/service/TicketService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-ticket/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1081,34 +917,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-user/src/main/java/com/example/user/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-user/src/main/java/com/example/ticket/service/TicketService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-user/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
           <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-ticket/src/main/java/com/example/ticket/service/TicketServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1130,10 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding>
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1141,6 +949,173 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="10" column="1" selection-start-line="10" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-user/src/main/java/com/example/ticket/service/TicketService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-user/src/main/java/com/example/user/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-ticket/src/main/java/com/example/ticket/service/TicketService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-06-dubbo-ticket/src/main/java/com/example/ticket/service/TicketServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-02-amqp/src/main/java/com/example/amqp/bean/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-02-amqp/src/main/java/com/example/amqp/service/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-02-amqp/src/main/java/com/example/amqp/config/MyAMQBConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-02-amqp/src/test/java/com/example/amqp/Springboot02AmqpApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="860">
+          <caret line="57" column="63" selection-start-line="57" selection-start-column="63" selection-end-line="57" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/test/java/com/example/security/Springboot05SecurityApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-05-security/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/pages/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/main/java/com/example/security/controller/KungfuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/main/java/com/example/security/config/MySecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/main/java/com/example/security/Springboot05SecurityApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-05-security/src/main/resources/templates/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-04-task/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/5.0.9.RELEASE/spring-context-support-5.0.9.RELEASE-sources.jar!/org/springframework/mail/javamail/JavaMailSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-04-task/src/main/java/com/example/task/Springboot04TaskApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-04-task/src/main/java/com/example/task/controller/AsyncController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-04-task/src/main/java/com/example/task/service/AsyncService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-04-task/src/main/java/com/example/task/service/ScheduledService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-04-task/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../springboot-04-task/src/test/java/com/example/task/Springboot04TaskApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>

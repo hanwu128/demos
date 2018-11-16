@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="demo" type="NodeJSConfigurationType" factoryName="Node.js" path-to-js-file="03_http.js" working-dir="$PROJECT_DIR$/helloword/bin/demo-01">
+    <envs>
+      <env name="DEBUG" value="helloword:*" />
+    </envs>
+    <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSStartBrowserRunConfigurationExtension">
+      <browser url="http://localhost:3000/" />
+    </EXTENSION>
+    <method />
+  </configuration>
+</component>
