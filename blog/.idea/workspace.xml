@@ -6,7 +6,783 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60037457-434b-4519-b13c-1490e1df167d" name="Default" comment="" />
+    <list default="true" id="60037457-434b-4519-b13c-1490e1df167d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/demo/table/user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layim/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layim/demo/find.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layim/demo/msgbox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layim/js/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/content/comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/content/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/content/tags.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/forum/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/forum/replys.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/layim/getList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/message/all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/message/direct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/message/notice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/table/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/table/demo2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/table/demo3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/table/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/table/user30.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/useradmin/mangadmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/useradmin/role.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/useradmin/webuser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/workorder/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/layui/css/modules/layim/layim.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/layui/css/modules/layim/skin/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/layui/css/modules/layim/skin/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/layui/css/modules/layim/skin/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/layui/css/modules/layim/skin/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/layui/css/modules/layim/skin/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/layui/css/modules/layim/voice/default.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/layui/lay/modules/layim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/modules/contlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/modules/forum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/modules/im.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/modules/message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/modules/senior.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/modules/set.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/modules/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/modules/useradmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/modules/workorder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/style/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/style/res/168.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/style/res/layui-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/style/res/template/character.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/style/res/template/huge.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/style/res/template/portrait.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/style/template.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/tpl/layim/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/tpl/system/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/tpl/system/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/tpl/system/theme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/test/table/demo1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/views/app/content/contform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/views/app/content/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/views/app/content/tagsform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/views/app/forum/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/views/app/forum/replysform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/views/app/workorder/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/views/user/administrators/adminform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/views/user/administrators/roleform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/views/user/user/userform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/button/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/demo/table/user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layim/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layim/demo/find.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layim/demo/msgbox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layim/js/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/console/prograss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/console/top-card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/console/top-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/content/comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/content/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/content/tags.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/forum/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/forum/replys.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/layim/getList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/message/all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/message/direct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/message/notice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/table/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/table/demo2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/table/demo3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/table/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/table/user30.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/user/logout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/useradmin/mangadmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/useradmin/role.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/useradmin/webuser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/workorder/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/modules/layim/layim.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/modules/layim/skin/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/modules/layim/skin/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/modules/layim/skin/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/modules/layim/skin/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/modules/layim/skin/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/modules/layim/voice/default.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/colorpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/layim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/rate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/lib/admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/lib/extend/echarts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/lib/extend/echartsTheme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/lib/view.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/console.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/contlist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/forum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/im.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/message.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/senior.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/set.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/useradmin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/workorder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/style/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/style/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/style/res/168.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/style/res/layui-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/style/res/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/style/res/template/character.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/style/res/template/huge.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/style/res/template/portrait.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/style/template.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/tpl/layim/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/tpl/system/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/tpl/system/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/tpl/system/theme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/test/table/demo1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/views/app/content/contform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/views/app/content/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/views/app/content/tagsform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/views/app/forum/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/views/app/forum/replysform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/views/app/workorder/listform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/views/user/administrators/adminform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/views/user/administrators/roleform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/views/user/user/userform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/app/content/comment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/app/content/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/app/content/tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/app/forum/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/app/forum/replys.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/app/message/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/app/workorder/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/anim/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/auxiliar/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/badge/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/button/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/carousel/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/code/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/colorpicker/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/flow/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/form/element.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/form/group.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/grid/all.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/grid/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/grid/mobile-pc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/grid/mobile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/grid/speed-dial.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/grid/stack.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/laydate/demo1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/laydate/demo2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/laydate/special-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/laydate/theme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/layer/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/layer/special-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/layer/theme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/laypage/demo1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/laypage/demo2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/nav/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/panel/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/progress/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/rate/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/slider/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/auto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/cellEdit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/cellEvent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/checkbox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/fixed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/height.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/initSort.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/onrow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/operate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/parseData.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/radio.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/reload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/resetPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/simple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/static.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/style.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/thead.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/toolbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/tostatic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/table/totalRow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/tabs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/timeline/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/upload/demo1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/upload/demo2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/component/util/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/demo/table/user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/home/console.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/home/homepage1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/home/homepage2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/senior/echarts/bar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/senior/echarts/line.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/senior/echarts/map.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/set/system/email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/set/system/website.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/set/user/info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/set/user/password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/template/addresslist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/template/caller.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/template/goodslist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/template/msgboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/template/personalpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/template/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/template/tips/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/template/tips/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/user/administrators/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/user/administrators/role.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/user/forget.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/user/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/user/reg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/user/user/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-parent/target/blog-parent-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-parent/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/java/com/hw/blog/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/java/com/hw/blog/controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/tpl/template/tips/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/auxiliar/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/auxiliar/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/badge/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/badge/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/button/index .html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/auto.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/auto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/cellEdit.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/cellEdit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/cellEvent.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/cellEvent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/checkbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/checkbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/data.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/fixed.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/fixed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/height.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/height.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/initSort.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/initSort.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/onrow.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/onrow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/operate.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/operate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/parseData.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/parseData.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/radio.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/radio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/reload.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/reload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/resetPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/resetPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/simple.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/static.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/static.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/style.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/style.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/thead.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/thead.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/toolbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/toolbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/tostatic.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/tostatic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/totalRow.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/component/table/totalRow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/css/admin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/css/avatar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/css/column.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/css/comment.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/css/css3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/css/email.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/css/grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/css/page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/css/panel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/css/var.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/fonts/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/fonts/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/fonts/demo_fontclass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/fonts/demo_symbol.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/fonts/demo_unicode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/fonts/iconfont.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/fonts/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/fonts/iconfont.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/fonts/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/fonts/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/fonts/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/images/l-line-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/images/l-line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/images/login/login_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/images/login/login_line.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/images/login/yzm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/js/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/js/module/dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/js/module/formate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/js/module/tool.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/css/layui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/css/layui.mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/css/modules/code.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/css/modules/laydate/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/css/modules/laydate/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/css/modules/layer/default/icon-ext.png" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/css/modules/layer/default/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/css/modules/layer/default/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/css/modules/layer/default/loading-0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/css/modules/layer/default/loading-1-1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/css/modules/layer/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/css/modules/layer/default/loading-2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/css/modules/layer/default/loading-4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/font/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/font/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/font/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/font/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/0.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/10.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/10.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/11.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/11.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/12.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/12.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/13.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/13.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/14.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/14.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/15.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/15.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/16.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/16.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/17.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/17.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/18.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/18.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/19.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/19.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/20.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/20.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/21.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/21.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/22.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/22.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/23.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/23.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/24.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/24.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/25.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/25.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/26.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/26.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/27.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/27.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/28.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/28.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/29.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/29.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/3.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/30.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/30.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/31.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/31.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/32.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/32.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/33.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/33.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/34.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/34.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/35.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/35.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/36.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/36.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/37.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/37.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/38.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/38.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/39.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/39.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/4.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/4.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/40.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/40.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/41.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/41.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/42.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/42.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/43.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/43.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/44.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/44.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/45.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/45.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/46.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/46.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/47.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/47.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/48.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/48.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/49.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/49.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/5.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/5.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/50.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/50.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/51.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/51.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/52.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/52.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/53.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/53.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/54.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/54.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/55.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/55.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/56.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/56.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/57.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/57.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/58.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/58.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/59.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/59.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/6.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/6.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/60.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/60.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/61.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/61.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/62.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/62.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/63.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/63.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/64.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/64.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/65.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/65.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/66.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/66.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/67.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/67.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/68.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/68.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/69.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/69.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/7.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/7.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/70.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/70.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/71.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/71.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/8.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/8.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/images/face/9.gif" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/9.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/lay/dest/layui.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/lay/modules/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/lay/modules/element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/lay/modules/flow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/lay/modules/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/lay/modules/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/lay/modules/laydate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/lay/modules/layedit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/lay/modules/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/lay/modules/laypage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/lay/modules/laytpl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/lay/modules/mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/lay/modules/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/lay/modules/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/lay/modules/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/layui-2.4.5.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/layui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/layui/layui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/less/admin.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/less/avatar.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/less/column.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/less/comment.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/less/css3.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/less/email.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/less/grid.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/less/login.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/less/main.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/less/page.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/less/panel.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/less/reset.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/less/var.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/less/welcome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/chart/bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/chart/chord.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/chart/eventRiver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/chart/force.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/chart/funnel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/chart/gauge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/chart/heatmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/chart/k.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/chart/line.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/chart/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/chart/pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/chart/radar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/chart/scatter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/chart/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/chart/treemap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/chart/venn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/chart/wordCloud.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/echarts-all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/echarts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/anchor/anchor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/attachment.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/attachment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/images/alignicon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/images/alignicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/images/file-icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/images/file-icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/attachment/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/background/background.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/background/background.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/background/background.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/background/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/background/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/charts/chart.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/charts/charts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/charts/charts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/charts/charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/charts/images/charts0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/charts/images/charts1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/charts/images/charts2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/charts/images/charts3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/charts/images/charts4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/charts/images/charts5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/emotion/emotion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/emotion/emotion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/emotion/emotion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/emotion/images/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/emotion/images/bface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/emotion/images/cface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/emotion/images/fface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/emotion/images/jxface2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/emotion/images/tface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/emotion/images/wface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/emotion/images/yface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/gmap/gmap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/help/help.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/help/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/help/help.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/image/image.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/image/image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/image/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/image/images/alignicon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/image/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/image/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/image/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/image/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/image/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/image/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/image/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/insertframe/insertframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/internal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/link/link.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/map/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/map/show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/music/music.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/music/music.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/music/music.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/preview/preview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/scrawl/images/addimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/scrawl/images/brush.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/scrawl/images/delimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/scrawl/images/delimgH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/scrawl/images/empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/scrawl/images/emptyH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/scrawl/images/eraser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/scrawl/images/redo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/scrawl/images/redoH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/scrawl/images/scale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/scrawl/images/scaleH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/scrawl/images/size.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/scrawl/images/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/scrawl/images/undoH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/scrawl/scrawl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/scrawl/scrawl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/scrawl/scrawl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/searchreplace/searchreplace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/searchreplace/searchreplace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/snapscreen/snapscreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/spechars/spechars.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/spechars/spechars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/table/dragicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/table/edittable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/table/edittable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/table/edittable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/table/edittd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/table/edittip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/template/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/template/images/bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/template/images/pre0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/template/images/pre1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/template/images/pre2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/template/images/pre3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/template/images/pre4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/template/template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/template/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/template/template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/video/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/video/images/center_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/video/images/file-icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/video/images/file-icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/video/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/video/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/video/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/video/images/left_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/video/images/none_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/video/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/video/images/right_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/video/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/video/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/video/video.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/video/video.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/video/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/webapp/webapp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/wordimage/imageUploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/wordimage/tangram.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/wordimage/wordimage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/dialogs/wordimage/wordimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/en/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/en/images/addimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/en/images/alldeletebtnhoverskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/en/images/alldeletebtnupskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/en/images/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/en/images/button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/en/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/en/images/deletedisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/en/images/deleteenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/en/images/listbackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/en/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/en/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/en/images/rotateleftdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/en/images/rotateleftenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/en/images/rotaterightdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/en/images/rotaterightenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/en/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/zh-cn/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/zh-cn/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/zh-cn/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/zh-cn/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/lang/zh-cn/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/php/Uploader.class.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/php/action_crawler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/php/action_list.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/php/action_upload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/php/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/php/controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/css/ueditor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/css/ueditor.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/dialogbase.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/arrow_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/arrow_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/button-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/cancelbutton.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/charts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/cursor_h.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/cursor_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/cursor_v.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/cursor_v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/dialog-title-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/filescan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/highlighted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/icons-all.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/loaderror.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/lock.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/pagebreak.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/scale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/sortable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/sparator_v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/table-cell-align.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/tangram-colorpicker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/toolbar_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/unhighlighted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/videologo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/word.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/default/images/wordpaste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/themes/iframe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/SyntaxHighlighter/shCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/codemirror/codemirror.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/codemirror/codemirror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/adapters/mootools-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/adapters/prototype-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/adapters/standalone-framework.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/highcharts-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/highcharts-more.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/highcharts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/highcharts.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/modules/annotations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/modules/annotations.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/modules/canvas-tools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/modules/canvas-tools.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/modules/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/modules/data.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/modules/drilldown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/modules/drilldown.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/modules/exporting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/modules/exporting.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/modules/funnel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/modules/funnel.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/modules/heatmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/modules/heatmap.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/modules/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/modules/map.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/modules/no-data-to-display.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/themes/dark-blue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/themes/dark-green.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/themes/gray.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/themes/grid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/highcharts/themes/skies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/jquery-1.10.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/jquery-1.10.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/jquery-1.10.2.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/video-js/font/vjs.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/video-js/font/vjs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/video-js/font/vjs.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/video-js/font/vjs.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/video-js/video-js.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/video-js/video-js.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/video-js/video-js.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/video-js/video.dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/video-js/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/webuploader/Uploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/webuploader/webuploader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/webuploader/webuploader.custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/webuploader/webuploader.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/webuploader/webuploader.flashonly.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/webuploader/webuploader.flashonly.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/webuploader/webuploader.html5only.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/webuploader/webuploader.html5only.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/webuploader/webuploader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/webuploader/webuploader.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/webuploader/webuploader.withoutimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/zeroclipboard/ZeroClipboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/ueditor.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/ueditor.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/ueditor.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/ueditor.parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/ueditor/ueditor.parse.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/js/jquery-3.3.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/js/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/js/layDate-v5.0.9/laydate/laydate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/js/layDate-v5.0.9/laydate/theme/default/font/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/js/layDate-v5.0.9/laydate/theme/default/font/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/js/layDate-v5.0.9/laydate/theme/default/font/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/js/layDate-v5.0.9/laydate/theme/default/font/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/js/layDate-v5.0.9/laydate/theme/default/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/login/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/login/images/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/login/images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/login/images/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/login/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/login/images/captcha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/login/images/copy_rignt_24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/admin-info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/article-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/article-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/article-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/column-danye-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/danye-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/danye-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/email-write.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/email.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/menu-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/menu-add2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/menu1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/menu2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/rbac-admin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/rbac-user-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/system.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/welcome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/login/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/admin/register/register.html" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/blog-parent/target/" />
     <ignored path="$PROJECT_DIR$/blog/target/" />
     <ignored path="$PROJECT_DIR$/blog-web02/target/" />
@@ -25,29 +801,10 @@
       <file leaf-file-name="MenuController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog-web02/src/main/java/com/hw/blog/controller/MenuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="760">
+              <caret line="549" selection-start-line="549" selection-end-line="549" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#241#242#0" expanded="true" />
-                <element signature="e#271#272#0" expanded="true" />
-                <element signature="e#344#345#0" expanded="true" />
-                <element signature="e#381#382#0" expanded="true" />
-                <element signature="e#458#459#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#574#575#0" expanded="true" />
-                <element signature="e#613#614#0" expanded="true" />
-                <element signature="e#703#704#0" expanded="true" />
-                <element signature="e#747#748#0" expanded="true" />
-                <element signature="e#841#842#0" expanded="true" />
-                <element signature="e#887#888#0" expanded="true" />
-                <element signature="e#986#987#0" expanded="true" />
-                <element signature="e#1035#1036#0" expanded="true" />
-                <element signature="e#1123#1124#0" expanded="true" />
-                <element signature="e#1166#1167#0" expanded="true" />
-                <element signature="e#1259#1260#0" expanded="true" />
-                <element signature="e#1304#1305#0" expanded="true" />
-                <element signature="e#1405#1406#0" expanded="true" />
                 <element signature="e#1455#1456#0" expanded="true" />
               </folding>
             </state>
@@ -63,7 +820,7 @@
         <entry file="file://$PROJECT_DIR$/blog-web02/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="83" column="15" lean-forward="true" selection-start-line="83" selection-start-column="15" selection-end-line="83" selection-end-column="15" />
+              <caret line="83" column="15" selection-start-line="83" selection-start-column="15" selection-end-line="83" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -118,6 +875,9 @@
       <replace>admin/layui/images/face/0.gif</replace>
       <replace>/</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="projectSyncType">
@@ -247,7 +1007,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,51 +1034,6 @@
               <item name="blog-web02" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog-web02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog-web02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hw" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog-web02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hw" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog-web02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="hw" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog-web02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -329,49 +1043,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog-web02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="layuiadmin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog-web02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="layuiadmin" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog-web02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog-web02" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -730,11 +1409,12 @@
       <workItem from="1542245399386" duration="11120000" />
       <workItem from="1542271653105" duration="9611000" />
       <workItem from="1542331600001" duration="28150000" />
+      <workItem from="1542591363112" duration="251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144118000" />
+    <option name="totallyTimeSpent" value="144369000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -761,29 +1441,29 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993573" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32867134" />
-      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32867134" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21786633" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22043702" />
       <window_info anchor="bottom" id="Problems" order="8" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="BPMNPalette" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -819,9 +1499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
-          <folding>
-            <element signature="e#1282#1290#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -829,9 +1506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-60">
           <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -839,9 +1513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
           <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -859,13 +1530,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog-web/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-web/web/index.jsp" />
     <entry file="file://$PROJECT_DIR$/blog/src/main/resources/templates/admin/index/email-write.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -880,13 +1545,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog-web/web/app.message.index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-web/web/app.message.index.html" />
     <entry file="file://$PROJECT_DIR$/blog/src/main/resources/static/admin/lib/echarts/echarts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -905,9 +1564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="8" column="64" lean-forward="true" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -934,9 +1590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-320">
           <caret line="59" column="43" lean-forward="true" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -956,9 +1609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-880">
           <caret line="10" column="74" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
-          <folding>
-            <element signature="n#style#0;n#dd#2;n#dl#0;n#li#4;n#ul#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -976,9 +1626,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog-web/web/jquery-3.3.1/jquery插件库.url">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-web/web/jquery-3.3.1/jquery插件库.url" />
     <entry file="file://$PROJECT_DIR$/blog-web/web/views/home/console.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6240">
@@ -1077,10 +1725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="324" column="11" lean-forward="true" selection-start-line="324" selection-start-column="11" selection-end-line="324" selection-end-column="11" />
-          <folding>
-            <element signature="n#style#0;n#cite#0;n#p#0;n#a#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#3;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1117,29 +1761,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog-web02/src/main/java/com/hw/blog/controller/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="760">
+          <caret line="549" selection-start-line="549" selection-end-line="549" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#344#345#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#841#842#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
-            <element signature="e#1035#1036#0" expanded="true" />
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1166#1167#0" expanded="true" />
-            <element signature="e#1259#1260#0" expanded="true" />
-            <element signature="e#1304#1305#0" expanded="true" />
-            <element signature="e#1405#1406#0" expanded="true" />
             <element signature="e#1455#1456#0" expanded="true" />
           </folding>
         </state>
@@ -1148,7 +1773,7 @@
     <entry file="file://$PROJECT_DIR$/blog-web02/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="83" column="15" lean-forward="true" selection-start-line="83" selection-start-column="15" selection-end-line="83" selection-end-column="15" />
+          <caret line="83" column="15" selection-start-line="83" selection-start-column="15" selection-end-line="83" selection-end-column="15" />
         </state>
       </provider>
     </entry>

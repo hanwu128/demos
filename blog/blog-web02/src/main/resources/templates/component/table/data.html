@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8">
   <title>赋值已知数据 - 数据表格</title>
@@ -36,7 +36,7 @@
   </div>
   
   <script src="../../../layuiadmin/layui/layui.js"></script>  
-  <script>
+  <script type="text/javascript" th:inline="none">
   layui.config({
     base: '../../../layuiadmin/' //静态资源所在路径
   }).extend({
