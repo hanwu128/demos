@@ -528,10 +528,16 @@ public class MenuController {
         return "senior/echarts/map";
     }
 
-    //用户    网站用户
+    //用户    编辑用户
     @RequestMapping("/user/user/list.html")
     public String userUserList() {
         return "user/user/list";
+    }
+
+    //用户    网站用户
+    @RequestMapping("/user/user/update.html")
+    public String userUserUpdate() {
+        return "user/user/update_user";
     }
 
     //用户    后台管理员

@@ -7,34 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60037457-434b-4519-b13c-1490e1df167d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/user/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/user/reg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/font/duanxin/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/font/duanxin/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/font/duanxin/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/font/duanxin/iconfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-web/web/layuiadmin/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web/web/layuiadmin/layui/css/layui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-web/web/layuiadmin/lib/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web/web/layuiadmin/lib/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layim/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layim/css/layui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/useradmin/webuser.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/useradmin/webuser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/modules/useradmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/modules/useradmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/conf/MySecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/conf/MySecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/user/user/update_user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/util/JsonResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/util/JsonResp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/css/layui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/font/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/font/iconfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/lib/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/lib/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/lib/view.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/lib/view.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/forum.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/forum.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/useradmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/useradmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/user/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/user/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/user/reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/user/user/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/user/user/list.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/blog-parent/target/" />
     <ignored path="$PROJECT_DIR$/blog/target/" />
@@ -51,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MenuController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MenuController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/MenuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7460">
-              <caret line="533" column="23" selection-start-line="533" selection-start-column="23" selection-end-line="533" selection-end-column="23" />
+            <state relative-caret-position="210">
+              <caret line="539" column="33" lean-forward="true" selection-start-line="539" selection-start-column="33" selection-end-line="539" selection-end-column="33" />
               <folding>
                 <element signature="e#371#372#0" expanded="true" />
                 <element signature="e#401#402#0" expanded="true" />
@@ -77,7 +52,7 @@
       <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/src/main/resources/templates/user/user/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
+            <state relative-caret-position="-160">
               <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -89,8 +64,8 @@
       <file leaf-file-name="useradmin.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/useradmin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="11" column="70" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="70" />
+            <state relative-caret-position="180">
+              <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -98,20 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forum.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/forum.js">
+      <file leaf-file-name="update_user.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog/src/main/resources/templates/user/user/update_user.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webuser.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/useradmin/webuser.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="33" column="84" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="84" />
+            <state relative-caret-position="200">
+              <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -119,9 +85,10 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="42" column="141" selection-start-line="42" selection-start-column="141" selection-end-line="42" selection-end-column="141" />
+            <state relative-caret-position="210">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#1111#1117#0" expanded="true" />
               </folding>
             </state>
@@ -305,7 +272,6 @@
         <option value="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/user/login.js" />
         <option value="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/user/reg.js" />
         <option value="$PROJECT_DIR$/blog/src/main/resources/templates/user/reg.html" />
-        <option value="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/MenuController.java" />
         <option value="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/conf/MySecurityConfig.java" />
         <option value="$PROJECT_DIR$/blog/src/main/resources/templates/user/login.html" />
         <option value="$PROJECT_DIR$/blog/src/main/resources/templates/user/user/list.html" />
@@ -317,9 +283,10 @@
         <option value="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/util/JsonResp.java" />
         <option value="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/model/User.java" />
-        <option value="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/useradmin.js" />
-        <option value="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/UserController.java" />
         <option value="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/forum.js" />
+        <option value="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/MenuController.java" />
+        <option value="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/useradmin.js" />
       </list>
     </option>
   </component>
@@ -468,47 +435,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="administrators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
@@ -659,23 +594,23 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\demos\blog\blog\src\main\resources\templates\user\user" />
+      <recent name="D:\GitHub\demos\blog\blog\src\main\resources\static\layuiadmin\json\user" />
+      <recent name="D:\GitHub\demos\blog\blog\src\main\resources\static\layuiadmin\layui\font\duanxin" />
+      <recent name="D:\GitHub\demos\blog\blog-web02\src\main\resources\static\layuiadmin\json\console" />
+      <recent name="D:\GitHub\demos\blog\blog-web02\src\main\resources\static\layuiadmin\modules" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hw.blog.service" />
+      <recent name="com.hw.blog.conf" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GitHub\demos\blog\blog-web\web\layuiadmin" />
       <recent name="D:\GitHub\demos\blog\blog-web\web\views" />
       <recent name="D:\GitHub\demos\blog\blog-web\web" />
       <recent name="D:\GitHub\demos\blog\blog\src\main\resources\static\admin\html" />
       <recent name="D:\GitHub\demos\blog\blog\src\main\resources\templates\aaa" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.hw.blog.service" />
-      <recent name="com.hw.blog.conf" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GitHub\demos\blog\blog\src\main\resources\static\layuiadmin\json\user" />
-      <recent name="D:\GitHub\demos\blog\blog\src\main\resources\static\layuiadmin\layui\font\duanxin" />
-      <recent name="D:\GitHub\demos\blog\blog-web02\src\main\resources\static\layuiadmin\json\console" />
-      <recent name="D:\GitHub\demos\blog\blog-web02\src\main\resources\static\layuiadmin\modules" />
-      <recent name="D:\GitHub\demos\blog\blog-web02\src\main\resources\static\layuiadmin\lib\extend" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1006,12 +941,12 @@
       <workItem from="1542887097907" duration="3051000" />
       <workItem from="1542937793975" duration="47000" />
       <workItem from="1542942217806" duration="8954000" />
-      <workItem from="1542964145686" duration="2388000" />
+      <workItem from="1542964145686" duration="3685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176957000" />
+    <option name="totallyTimeSpent" value="178254000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1024,7 +959,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50064266" side_tool="true" weight="0.4" />
@@ -1053,7 +987,7 @@
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="BPMNPalette" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32867134" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3277311" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -1076,13 +1010,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blog-web02/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="61" column="37" lean-forward="true" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog-web02/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -1141,13 +1068,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/layui/images/face/66.gif">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/src/main/resources/static/views/user/user/userform.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="30" column="118" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="118" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog-web02/src/main/resources/templates/template/msgboard.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1330,37 +1250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/MenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7460">
-          <caret line="533" column="23" selection-start-line="533" selection-start-column="23" selection-end-line="533" selection-end-column="23" />
-          <folding>
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-            <element signature="e#2145#2146#0" expanded="true" />
-            <element signature="e#2195#2196#0" expanded="true" />
-            <element signature="e#11307#11308#0" expanded="true" />
-            <element signature="e#11340#11341#0" expanded="true" />
-            <element signature="e#13713#13714#0" expanded="true" />
-            <element signature="e#13762#13763#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/src/main/resources/templates/user/user/list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/CX/Java/jdk1.8.0_121/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -1450,16 +1339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="42" column="141" selection-start-line="42" selection-start-column="141" selection-end-line="42" selection-end-column="141" />
-          <folding>
-            <element signature="e#1111#1117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog-web02/src/main/resources/static/layuiadmin/json/useradmin/webuser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -1467,20 +1346,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/forum.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/src/main/resources/templates/user/user/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/src/main/resources/static/views/user/user/userform.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="118" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1111#1117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/src/main/resources/templates/user/user/update_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/useradmin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="11" column="70" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="70" />
+        <state relative-caret-position="180">
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/forum.js">
+    <entry file="file://$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        <state relative-caret-position="210">
+          <caret line="539" column="33" lean-forward="true" selection-start-line="539" selection-start-column="33" selection-end-line="539" selection-end-column="33" />
+          <folding>
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#2145#2146#0" expanded="true" />
+            <element signature="e#2195#2196#0" expanded="true" />
+            <element signature="e#11307#11308#0" expanded="true" />
+            <element signature="e#11340#11341#0" expanded="true" />
+            <element signature="e#13713#13714#0" expanded="true" />
+            <element signature="e#13762#13763#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

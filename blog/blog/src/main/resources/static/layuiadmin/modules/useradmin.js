@@ -37,7 +37,7 @@
             layer.open({
                 type: 2,
                 title: "编辑用户",
-                content: "../../../views/user/user/userform.html",
+                content: "/user/user/update.html",
                 maxmin: !0,
                 area: ["500px", "450px"],
                 btn: ["确定", "取消"],
