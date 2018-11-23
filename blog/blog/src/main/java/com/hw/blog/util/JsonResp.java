@@ -19,7 +19,7 @@ public class JsonResp {
     private static int CODE_ERROR = HttpServletResponse.SC_INTERNAL_SERVER_ERROR;
 
     private int code = -1;
-    private String message = "";
+    private String msg = "";
     private Object data = null;
 
     private JsonResp() {
@@ -33,9 +33,9 @@ public class JsonResp {
         this(code, msg, new JSONObject());
     }
 
-    private JsonResp(int code, String message, Object data) {
+    public JsonResp(int code, String msg, Object data) {
         this.code = code;
-        this.message = message;
+        this.msg = msg;
         this.data = data;
     }
 
@@ -67,7 +67,7 @@ public class JsonResp {
     public static JsonResp httpCode(HttpServletResponse resp, int code) {
         resp.setStatus(code);
         JsonResp jsonResp = new JsonResp(code);
-        jsonResp.setMessage(MSG_SUCCESS);
+        jsonResp.setMsg(MSG_SUCCESS);
         jsonResp.setData(new JSONObject());
         return jsonResp;
     }
@@ -78,7 +78,7 @@ public class JsonResp {
     }
 
     public JsonResp errorResp(String msg) {
-        this.setMessage(msg);
+        this.setMsg(msg);
         return this;
     }
 
@@ -92,12 +92,12 @@ public class JsonResp {
         this.code = code;
     }
 
-    public String getMessage() {
-        return message;
+    public String getMsg() {
+        return msg;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 
     public Object getData() {

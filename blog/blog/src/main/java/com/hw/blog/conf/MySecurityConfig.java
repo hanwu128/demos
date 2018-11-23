@@ -21,7 +21,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().anyRequest().permitAll();
                 //.antMatchers("/user/**").hasRole("VIP2");
         //开启自动配置的登陆功能，效果，如果没有权限就会来到登陆页面
-        http.formLogin().usernameParameter("user").passwordParameter("pwd").loginPage("/login.html").failureForwardUrl("/login.html").successForwardUrl("/index.html");
+        http.formLogin().usernameParameter("username").passwordParameter("password").loginPage("/login.html").failureForwardUrl("/login.html").successForwardUrl("/index.html");
         //1、/login来到登录页
         //2、重定向到/login?error表示登陆失败
         //3、更多详细规则

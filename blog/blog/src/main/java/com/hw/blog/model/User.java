@@ -1,7 +1,6 @@
 package com.hw.blog.model;
 
 import java.io.Serializable;
-import java.util.Date;
 
 /**
  * 用户表
@@ -13,17 +12,35 @@ public class User implements Serializable {
     private String name;    //用户名
     private String password;//用户密码
     private String email;   //用户邮箱
-    private String profilePhone;//用户头像
+    private String photo;//用户头像
     private String level = "菜鸟";   //用户等级
-    private String rights = "普通用户";  //用户权限
-    private Date registrationTime;//注册时间
-    private String birthday;  //用户生日
+    private String permission = "普通用户";  //用户权限
+    private Long registTime;//注册时间
+    private String birth;  //用户生日
     private Integer age;    //用户年龄
-    private Integer telephoneNumber;//用户手机号
+    private String phone;//用户手机号
     private String nickname;//用户昵称
     private Integer activate = 0;//激活状态  0未激活  1已激活
     private String code;    //注册码
     private Integer del = 0;    //删除标识  0未删除   1已删除
+
+    public User() {
+        super();
+    }
+
+    public User(Long id, String ip, String name, String email, String photo, String level, Long registTime, String birth, Integer age, String phone, String nickname) {
+        this.id = id;
+        this.ip = ip;
+        this.name = name;
+        this.email = email;
+        this.photo = photo;
+        this.level = level;
+        this.registTime = registTime;
+        this.birth = birth;
+        this.age = age;
+        this.phone = phone;
+        this.nickname = nickname;
+    }
 
     public Long getId() {
         return id;
@@ -65,12 +82,12 @@ public class User implements Serializable {
         this.email = email;
     }
 
-    public String getProfilePhone() {
-        return profilePhone;
+    public String getPhoto() {
+        return photo;
     }
 
-    public void setProfilePhone(String profilePhone) {
-        this.profilePhone = profilePhone;
+    public void setPhoto(String photo) {
+        this.photo = photo;
     }
 
     public String getLevel() {
@@ -81,28 +98,28 @@ public class User implements Serializable {
         this.level = level;
     }
 
-    public String getRights() {
-        return rights;
+    public String getPermission() {
+        return permission;
     }
 
-    public void setRights(String rights) {
-        this.rights = rights;
+    public void setPermission(String permission) {
+        this.permission = permission;
     }
 
-    public Date getRegistrationTime() {
-        return registrationTime;
+    public Long getRegistTime() {
+        return registTime;
     }
 
-    public void setRegistrationTime(Date registrationTime) {
-        this.registrationTime = registrationTime;
+    public void setRegistTime(Long registTime) {
+        this.registTime = registTime;
     }
 
-    public String getBirthday() {
-        return birthday;
+    public String getBirth() {
+        return birth;
     }
 
-    public void setBirthday(String birthday) {
-        this.birthday = birthday;
+    public void setBirth(String birth) {
+        this.birth = birth;
     }
 
     public Integer getAge() {
@@ -113,12 +130,12 @@ public class User implements Serializable {
         this.age = age;
     }
 
-    public Integer getTelephoneNumber() {
-        return telephoneNumber;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setTelephoneNumber(Integer telephoneNumber) {
-        this.telephoneNumber = telephoneNumber;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getNickname() {
