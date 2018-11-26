@@ -20,6 +20,7 @@ public class JsonResp {
 
     private int code = -1;
     private String msg = "";
+    private String count = "";
     private Object data = null;
 
     private JsonResp() {
@@ -36,6 +37,13 @@ public class JsonResp {
     public JsonResp(int code, String msg, Object data) {
         this.code = code;
         this.msg = msg;
+        this.data = data;
+    }
+
+    public JsonResp(int code, String msg, String count, Object data) {
+        this.code = code;
+        this.msg = msg;
+        this.count = count;
         this.data = data;
     }
 
@@ -98,6 +106,14 @@ public class JsonResp {
 
     public void setMsg(String msg) {
         this.msg = msg;
+    }
+
+    public String getCount() {
+        return count;
+    }
+
+    public void setCount(String count) {
+        this.count = count;
     }
 
     public Object getData() {

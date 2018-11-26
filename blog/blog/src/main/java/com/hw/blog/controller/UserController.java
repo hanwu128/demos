@@ -1,6 +1,5 @@
 package com.hw.blog.controller;
 
-import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.hw.blog.model.User;
 import com.hw.blog.service.MessagesService;
@@ -15,8 +14,6 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.Timestamp;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -38,37 +35,24 @@ public class UserController {
     public Object getList(HttpServletRequest request, HttpServletResponse response) {
         try {
 
-            List<User> userList = new ArrayList<User>();
-            userList.add(new User(1L, "172.0.0.1", "zhangsan", "zhangsan@163.com", "https://wx4.sinaimg.cn/mw1024/5db11ff4gy1fmx4keaw9pj20dw08caa4.jpg", "菜鸟", new Date().getTime(), "2018-12-12", 18, "12345678901", "小菜鸡"));
-            userList.add(new User(2L, "172.0.0.1", "lisi", "lisi@163.com", "https://wx2.sinaimg.cn/mw690/5db11ff4gy1fmx4kec5bvj20eb0h3mxh.jpg", "菜鸟", new Date().getTime(), "2018-12-12", 18, "12345678901", "小菜鸡"));
-            userList.add(new User(3L, "172.0.0.1", "wangwu", "wangwu@163.com", "https://wx4.sinaimg.cn/mw1024/5db11ff4gy1fmx4keaw9pj20dw08caa4.jpg", "菜鸟", new Date().getTime(), "2018-12-12", 18, "12345678901", "小菜鸡"));
-            userList.add(new User(4L, "172.0.0.1", "zhaoliu", "zhaoliu@163.com", "https://wx4.sinaimg.cn/mw1024/5db11ff4gy1fmx4keaw9pj20dw08caa4.jpg", "菜鸟", new Date().getTime(), "2018-12-12", 18, "12345678901", "小菜鸡"));
-            userList.add(new User(5L, "172.0.0.1", "sunqi", "sunqi@163.com", "https://wx4.sinaimg.cn/mw1024/5db11ff4gy1fmx4keaw9pj20dw08caa4.jpg", "菜鸟", new Date().getTime(), "2018-12-12", 18, "12345678901", "小菜鸡"));
-
-            JSONObject result = new JSONObject();
-            result.put("code", 0);
-            result.put("msg", "success");
-            result.put("count", "100");
-            /*JSONArray arr = new JSONArray();
-            JSONObject json = null;
-            for (int i = 0; i < 10; i++) {
-                json = new JSONObject();
-                json.put("id", i);
-                json.put("username", "用户" + i);
-                json.put("avatar", "https://wx4.sinaimg.cn/mw1024/5db11ff4gy1fmx4keaw9pj20dw08caa4.jpg");
-                json.put("phone", 12345678901L);
-                json.put("email", "11111@qq.com");
-                json.put("sex", "男");
-                json.put("ip", "1111111" + i);
-                json.put("jointime", "20171204");
-                arr.add(json);
-            }*/
-            result.put("data", userList);
-            return result;
+            List<User> userList = userService.getList(0, 10, "%");
+            return new JsonResp(0, "success", "100", userList);
         } catch (Exception e) {
             e.printStackTrace();
         }
         return JsonResp.httpCode(response, HttpServletResponse.SC_INTERNAL_SERVER_ERROR).errorResp(messagesService.getMessage("error", new Object[]{"query user is error "}));
+    }
+
+    @GetMapping("/user/{id}")
+    public Object getUser(HttpServletRequest request, HttpServletResponse response, @PathVariable("id") Long id) {
+        User user = userService.getById(id);
+        return new JsonResp(0, "success", user);
+    }
+
+    @GetMapping("/update")
+    public Object updateUser(HttpServletRequest request, HttpServletResponse response, User user) {
+        userService.updateUser(user);
+        return new JsonResp(0, "success", user);
     }
 
     @PostMapping("/list2")
