@@ -23,10 +23,44 @@
     }),
         i.on("tool(LAY-user-manage)", function (e) {
             var id = e.data['id'];
-            if ("del" === e.event) layer.prompt({formType: 1, title: "敏感操作，请验证口令"}, function (t, i) {
-                layer.close(i), layer.confirm("真的删除行么", function (t) {
-                    e.del(), layer.close(t)
-                })
+            if ("del" === e.event) layer.prompt({formType: 1, title: "敏感操作，请输入密码"}, function (t, i) {
+                layer.close(i);
+                admin.req({
+                    url: '/user/verify/password/' + id,
+                    data: {password: t},
+                    success: function (res) {
+                        var json = eval(res);
+                        code = json.code;
+                        if (code === 0) {
+                            layer.confirm("真的删除行么", function (t) {
+                                admin.req({
+                                    url: '/user/del/' + id,
+                                    data: '',
+                                    success: function (res) {
+                                        var delJson = eval(res);
+                                        if (eval(res).code === 0) {
+                                            e.del();
+                                            layer.close(t);
+                                            location.reload();
+                                        } else {
+                                            layer.alert('删除失败！', {
+                                                title: "错误信息",
+                                                icon: 2,
+                                                skin: 'layer-ext-moon'
+                                            })
+                                        }
+                                    }
+                                });
+                            })
+                        } else {
+                            layer.alert('密码错误！', {
+                                title: "错误信息",
+                                icon: 2,
+                                skin: 'layer-ext-moon'
+                            })
+                        }
+                    }
+                });
             }); else if ("edit" === e.event) {
                 t(e.tr);
                 layer.open({
@@ -45,7 +79,9 @@
                                 url: '/user/update',
                                 data: t.field,
                                 done: function (res) {
-                                    i.reload("LAY-user-front-submit"), layer.close(e);
+                                    i.reload("LAY-user-front-submit");
+                                    layer.close(e);
+                                    location.reload();
                                 }
                             });
                         }), n.trigger("click")

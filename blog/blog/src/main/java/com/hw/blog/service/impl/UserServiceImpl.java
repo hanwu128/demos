@@ -60,4 +60,14 @@ public class UserServiceImpl implements UserService {
     public Integer activateUser(String code) {
         return userdao.activateUser(code);
     }
+
+    @Override
+    public Integer delUser(Long id) {
+        return userdao.delUser(id);
+    }
+
+    @Override
+    public User getPassWordById(Long id) {
+        return userdao.getPassWordById(id);
+    }
 }

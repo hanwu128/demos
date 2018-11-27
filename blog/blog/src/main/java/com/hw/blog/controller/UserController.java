@@ -43,6 +43,20 @@ public class UserController {
         return JsonResp.httpCode(response, HttpServletResponse.SC_INTERNAL_SERVER_ERROR).errorResp(messagesService.getMessage("error", new Object[]{"query user is error "}));
     }
 
+    @GetMapping("/add/")
+    public Object addUser(HttpServletRequest request, HttpServletResponse response, User user) {
+        user.setIp(GetIpUtil.getIpAddr(request));
+        user.setRegistTime(new Date().getTime());
+        user.setPhoto("aa");
+        if (StringUtils.isEmpty(user.getNickname())) {
+            user.setNickname(user.getName());
+        }
+        user.setAge(CommonUtil.getAge(user.getBirth()));
+        user.setCode(CommonUtil.getUUID());
+        Integer rows = userService.addUser(user);
+        return new JsonResp(0, "success", user);
+    }
+
     @GetMapping("/user/{id}")
     public Object getUser(HttpServletRequest request, HttpServletResponse response, @PathVariable("id") Long id) {
         User user = userService.getById(id);
@@ -53,6 +67,26 @@ public class UserController {
     public Object updateUser(HttpServletRequest request, HttpServletResponse response, User user) {
         userService.updateUser(user);
         return new JsonResp(0, "success", user);
+    }
+
+    @GetMapping("/verify/password/{id}")
+    public Object verifyPassword(HttpServletRequest request, HttpServletResponse response, @PathVariable("id") Long id, String password) {
+        User user = userService.getPassWordById(id);
+        if (!StringUtils.isEmpty(password) && user != null && !StringUtils.isEmpty(user.getPassword())) {
+            if (user.getPassword().equals(password)) {
+                return new JsonResp(0, "success", password);
+            }
+        }
+        return new JsonResp(1001, "failure", password);
+    }
+
+    @GetMapping("/del/{id}")
+    public Object deltUser(HttpServletRequest request, HttpServletResponse response, @PathVariable("id") Long id) {
+        if (id != null && id > 0) {
+            Integer rows = userService.delUser(id);
+            return new JsonResp(0, "success", null);
+        }
+        return new JsonResp(1001, "failure", null);
     }
 
     @PostMapping("/list2")

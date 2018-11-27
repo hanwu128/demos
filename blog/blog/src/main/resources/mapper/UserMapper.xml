@@ -34,11 +34,12 @@
     <select id="getList" resultMap="user" parameterType="hashmap">
         select
         user_id,user_ip,user_name,user_email,user_level,user_permission,user_regist_time,user_birth,user_age,user_phone,user_nickname
-        from hw_users limit
+        from hw_users where user_del = 0
         <if test=" name != null and '' != name ">
-            where user_name like #{name}
+            and user_name like #{name}
         </if>
-        #{start},#{offset}
+        order by user_id desc
+        limit #{start},#{offset}
     </select>
 
     <select id="getById" resultMap="user" parameterType="hashmap">
@@ -69,5 +70,13 @@
     <update id="activateUser" parameterType="java.lang.String">
         update hw_users set user_activate = 1 where user_code = #{code}
     </update>
+
+    <update id="delUser" parameterType="java.lang.Long">
+        update hw_users set user_del = 1 where user_id = #{id}
+    </update>
+
+    <select id="getPassWordById" resultMap="user" parameterType="java.lang.Long">
+		select user_id,user_password from hw_users where user_id = #{id}
+	</select>
 
 </mapper>

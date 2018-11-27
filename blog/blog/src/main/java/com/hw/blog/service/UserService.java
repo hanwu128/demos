@@ -19,4 +19,8 @@ public interface UserService {
     Integer updateUser(User user);
 
     Integer activateUser(String code);
+
+    Integer delUser(Long id);
+
+    User getPassWordById(Long id);
 }
