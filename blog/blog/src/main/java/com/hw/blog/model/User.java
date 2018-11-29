@@ -20,9 +20,9 @@ public class User implements Serializable {
     private Integer age;    //用户年龄
     private String phone;//用户手机号
     private String nickname;//用户昵称
-    private Integer activate = 0;//激活状态  0未激活  1已激活
+    private Integer activate;//激活状态  0未激活  1已激活
     private String code;    //注册码
-    private Integer del = 0;    //删除标识  0未删除   1已删除
+    private Integer del;    //删除标识  0未删除   1已删除
 
     public User() {
         super();

@@ -25,18 +25,24 @@
     </resultMap>
     <!--user_id,user_ip,user_name,user_password,user_email,user_profile_photo,user_level,user_rights,user_registration_time,user_birthday,user_age,user_telephone_number,user_nickname-->
     <select id="getTotal" resultType="java.lang.Integer" parameterType="hashmap">
-        select count(0) count from hw_users
-        <if test=" name != null and '' != name ">
-            where user_name like #{name}
+        select count(0) count from hw_users where user_del = 0
+        <if test='name != null and  "%" != name'>
+            and user_name like #{name}
+        </if>
+        <if test=" activate != null and activate != 2 ">
+            and user_activate = #{activate}
         </if>
     </select>
 
     <select id="getList" resultMap="user" parameterType="hashmap">
         select
-        user_id,user_ip,user_name,user_email,user_level,user_permission,user_regist_time,user_birth,user_age,user_phone,user_nickname
+        user_id,user_ip,user_name,user_email,user_level,user_permission,user_regist_time,user_birth,user_age,user_phone,user_nickname,user_activate
         from hw_users where user_del = 0
-        <if test=" name != null and '' != name ">
+        <if test='name != null and  "%" != name'>
             and user_name like #{name}
+        </if>
+        <if test=" activate != null and activate != 2 ">
+            and user_activate = #{activate}
         </if>
         order by user_id desc
         limit #{start},#{offset}
@@ -50,8 +56,8 @@
     <insert id="addUser" parameterType="user" useGeneratedKeys="true"
             keyProperty="cer_id"
             keyColumn="id">
-        insert into hw_users(user_ip,user_name,user_password,user_email,user_profile_photo,user_level,user_rights,user_registration_time,user_birthday,user_age,user_telephone_number,user_nickname,user_activate,user_code)
-        values(#{ip},#{name},#{password},#{email},#{profilePhone},#{level},#{rights},#{registrationTime},#{birthday},#{age},#{telephoneNumber},#{nickname},#{activate},#{code})
+        insert into hw_users(user_ip,user_name,user_password,user_email,user_photo,user_level,user_permission,user_regist_time,user_birth,user_age,user_phone,user_nickname,user_activate,user_code)
+        values(#{ip},#{name},#{password},#{email},#{photo},#{level},#{permission},now(),#{birth},#{age},#{phone},#{nickname},#{activate},#{code})
     </insert>
 
     <update id="updateUser" parameterType="User" useGeneratedKeys="true" keyProperty="company_id" keyColumn="id">
@@ -71,8 +77,14 @@
         update hw_users set user_activate = 1 where user_code = #{code}
     </update>
 
-    <update id="delUser" parameterType="java.lang.Long">
-        update hw_users set user_del = 1 where user_id = #{id}
+    <update id="delUser" parameterType="java.util.List">
+        update hw_users set user_del = 1 where
+        <foreach item="item" collection="list" index="index">
+            <choose>
+                <when test="list.size == index+1">user_id = #{item}</when>
+                <otherwise>user_id = #{item} or</otherwise>
+            </choose>
+        </foreach>
     </update>
 
     <select id="getPassWordById" resultMap="user" parameterType="java.lang.Long">

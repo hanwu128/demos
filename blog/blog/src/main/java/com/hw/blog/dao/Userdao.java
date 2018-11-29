@@ -25,7 +25,7 @@ public interface Userdao {
 
     Integer activateUser(String code);
 
-    Integer delUser(Long id);
+    Integer delUser(List<String> ids);
 
     User getPassWordById(Long id);
 }

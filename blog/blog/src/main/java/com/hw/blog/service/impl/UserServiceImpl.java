@@ -17,18 +17,20 @@ public class UserServiceImpl implements UserService {
     private Userdao userdao;
 
     @Override
-    public int getTotal(String name) {
+    public int getTotal(String name, Integer activate) {
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("name", name);
+        map.put("activate", activate);
         return userdao.getTotal(map);
     }
 
     @Override
-    public List<User> getList(int start, int offset, String like) {
+    public List<User> getList(int start, int offset, String name, Integer activate) {
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("start", start);
         map.put("offset", offset);
-        map.put("like", like);
+        map.put("name", name);
+        map.put("activate", activate);
         return userdao.getList(map);
     }
 
@@ -62,8 +64,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Integer delUser(Long id) {
-        return userdao.delUser(id);
+    public Integer delUser(List<String> ids) {
+        return userdao.delUser(ids);
     }
 
     @Override

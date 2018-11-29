@@ -19,6 +19,12 @@
         <input type="text" name="name" lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
       </div>
     </div>
+      <div class="layui-form-item">
+          <label class="layui-form-label">密码</label>
+          <div class="layui-input-inline">
+              <input type="password" name="password" lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+          </div>
+      </div>
     <div class="layui-form-item">
       <label class="layui-form-label">手机号码</label>
       <div class="layui-input-inline">
@@ -55,12 +61,12 @@
               upload = layui.upload;
           upload.render({
               elem: '#layuiadmin-upload-useradmin',
-              url: layui.setter.base + 'json/upload/demo.js',
+              url: '/user/upload/photo',
               accept: 'images',
-              method: 'get',
+              method: 'post',
               acceptMime: 'image/*',
               done: function (res) {
-                  $(this.item).prev("div").children("input").val(res.data.src)
+                  $(this.item).prev("div").children("input").val(res.data)
               }
           });
       })

@@ -6,18 +6,22 @@
         id: "id",
         elem: "#LAY-user-manage",
         url: "/user/list",
-        cols: [[{type: "checkbox", fixed: "left"},
+        cols: [[{title: '序号', width: 40, type: 'numbers'},
             {field: "name", title: "用户名", minWidth: 100},
-            {field: "photo", title: "头像", width: 100, templet: "#imgTpl"},
             {field: "phone", title: "手机"},
             {field: "email", title: "邮箱"},
             {field: "level", width: 80, title: "等级"},
             {field: "ip", title: "IP"},
-            {field: "registTime", title: "加入时间", sort: !0},
+            {
+                field: "registTime", title: "加入时间", sort: !0, templet: function (row) {
+                    return formatTime(row.registTime);
+                }
+            },
+            {field: "activate", title: "激活状态", templet: "#buttonTpl", minWidth: 80, align: "center"},
             {title: "操作", width: 150, align: "center", fixed: "right", toolbar: "#table-useradmin-webuser"}
         ]],
-        page: !0,
-        limit: 30,
+        page: true,
+        limit: 10,
         height: "full-220",
         text: "对不起，加载出现异常！"
     }),
@@ -26,8 +30,8 @@
             if ("del" === e.event) layer.prompt({formType: 1, title: "敏感操作，请输入密码"}, function (t, i) {
                 layer.close(i);
                 admin.req({
-                    url: '/user/verify/password/' + id,
-                    data: {password: t},
+                    url: '/user/verify/password/' + t,
+                    data: '',
                     success: function (res) {
                         var json = eval(res);
                         code = json.code;
@@ -178,6 +182,58 @@
                 }
             })
         }
-    }), e("useradmin", {})
-})
-;
+    }),
+        //监听搜索
+        f.on('submit(LAY-user-front-search)', function (data) {
+            var field = data.field;
+
+            i.render({
+                id: "id",
+                elem: "#LAY-user-manage",
+                url: "/user/list",
+                cols: [[{type: "checkbox", fixed: "left"},
+                    {field: "name", title: "用户名", minWidth: 100},
+                    {field: "phone", title: "手机"},
+                    {field: "email", title: "邮箱"},
+                    {field: "level", width: 80, title: "等级"},
+                    {field: "ip", title: "IP"},
+                    {
+                        field: "registTime", title: "加入时间", sort: !0, templet: function (row) {
+                            return formatTime(row.registTime);
+                        }
+                    },
+                    {field: "activate", title: "激活状态", templet: "#buttonTpl", minWidth: 80, align: "center"},
+                    {title: "操作", width: 150, align: "center", fixed: "right", toolbar: "#table-useradmin-webuser"}
+                ]],
+                page: !0,
+                limit: 30,
+                height: "full-220",
+                where: field,
+                method: 'post',
+                text: "对不起，加载出现异常！"
+            })
+
+            //执行重载
+            i.reload('LAY-user-manage', {
+                where: field
+            });
+        }), e("useradmin", {})
+});
+
+//格式化时间
+function formatTime(time) {
+    var date = new Date(time);
+    var y = date.getFullYear();
+    var m = date.getMonth() + 1;
+    m = m < 10 ? '0' + m : m;
+    var d = date.getDate();
+    d = d < 10 ? ("0" + d) : d;
+    var h = date.getHours();
+    h = h < 10 ? ("0" + h) : h;
+    var M = date.getMinutes();
+    M = M < 10 ? ("0" + M) : M;
+    var s = date.getSeconds();
+    s = s < 10 ? ("0" + s) : s;
+    var str = y + "-" + m + "-" + d + " " + h + ":" + M + ":" + s;
+    return str;
+}
