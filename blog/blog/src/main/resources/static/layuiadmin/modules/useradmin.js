@@ -7,17 +7,19 @@
         elem: "#LAY-user-manage",
         url: "/user/list",
         cols: [[{title: '序号', width: 40, type: 'numbers'},
-            {field: "name", title: "用户名", minWidth: 100},
-            {field: "phone", title: "手机"},
-            {field: "email", title: "邮箱"},
-            {field: "level", width: 80, title: "等级"},
-            {field: "ip", title: "IP"},
+            {field: "name", title: "用户名", minWidth: 80, maxWidth: 100},
+            {field: "nickname", title: "昵称", minWidth: 80, maxWidth: 100},
+            {field: "phone", title: "手机", minWidth: 80, maxWidth: 100},
+            {field: "email", title: "邮箱", minWidth: 100, maxWidth: 100},
+            {field: "level", width: 60, title: "等级"},
+            {field: "birth", title: "生日", minWidth: 90, maxWidth: 100, sort: !0},
+            {field: "age", title: "年龄", width: 70, sort: !0},
             {
-                field: "registTime", title: "加入时间", sort: !0, templet: function (row) {
+                field: "registTime", title: "加入时间", minWidth: 100, maxWidth: 120, sort: !0, templet: function (row) {
                     return formatTime(row.registTime);
                 }
             },
-            {field: "activate", title: "激活状态", templet: "#buttonTpl", minWidth: 80, align: "center"},
+            {field: "activate", title: "激活状态", templet: "#buttonTpl", width: 90, align: "center"},
             {title: "操作", width: 150, align: "center", fixed: "right", toolbar: "#table-useradmin-webuser"}
         ]],
         page: true,
@@ -243,6 +245,6 @@ function formatTime(time) {
     M = M < 10 ? ("0" + M) : M;
     var s = date.getSeconds();
     s = s < 10 ? ("0" + s) : s;
-    var str = y + "-" + m + "-" + d + " " + h + ":" + M + ":" + s;
+    var str = y + "-" + m + "-" + d + " " + h + ":" + M;
     return str;
 }
