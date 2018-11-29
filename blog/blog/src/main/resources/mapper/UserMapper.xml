@@ -13,7 +13,6 @@
         <result column="email" property="email"/>
         <result column="photo" property="photo"/>
         <result column="level" property="level"/>
-        <result column="permission" property="permission"/>
         <result column="registTime" property="registTime" typeHandler="com.hw.blog.handler.Time2LongHandler"/>
         <result column="birth" property="birth"/>
         <result column="age" property="age"/>
@@ -35,7 +34,7 @@
 
     <select id="getList" resultMap="user" parameterType="hashmap">
         select
-        id,ip,name,email,level,permission,registTime,birth,age,phone,nickname,activate
+        id,ip,name,email,level,registTime,birth,age,phone,nickname,activate
         from hw_users where del = 0
         <if test='name != null and  "%" != name'>
             and name like #{name}
@@ -48,15 +47,15 @@
     </select>
 
     <select id="getById" resultMap="user" parameterType="hashmap">
-		select id,ip,name,email,level,permission,registTime,birth,age,phone,nickname
+		select id,ip,name,email,level,registTime,birth,age,phone,nickname
         from hw_users where id = #{id}
 	</select>
 
     <insert id="addUser" parameterType="user" useGeneratedKeys="true"
             keyProperty="cer_id"
             keyColumn="id">
-        insert into hw_users(ip,name,password,email,photo,level,permission,registTime,birth,age,phone,nickname,activate,code)
-        values(#{ip},#{name},#{password},#{email},#{photo},#{level},#{permission},now(),#{birth},#{age},#{phone},#{nickname},#{activate},#{code})
+        insert into hw_users(ip,name,password,email,photo,level,registTime,birth,age,phone,nickname,activate,code)
+        values(#{ip},#{name},#{password},#{email},#{photo},#{level},now(),#{birth},#{age},#{phone},#{nickname},#{activate},#{code})
     </insert>
 
     <update id="updateUser" parameterType="User" useGeneratedKeys="true" keyProperty="company_id" keyColumn="id">

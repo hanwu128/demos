@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * 用户表
  */
-public class User implements Serializable {
+public class AdminUser implements Serializable {
 
     private Long id;        //ID
     private String ip;      //IP
@@ -13,7 +13,7 @@ public class User implements Serializable {
     private String password;//用户密码
     private String email;   //用户邮箱
     private String photo;//用户头像
-    private String level = "菜鸟";   //用户等级
+    private String permission = "普通用户";  //用户权限
     private Long registTime;//注册时间
     private String birth;  //用户生日
     private Integer age;    //用户年龄
@@ -23,17 +23,16 @@ public class User implements Serializable {
     private String code;    //注册码
     private Integer del;    //删除标识  0未删除   1已删除
 
-    public User() {
+    public AdminUser() {
         super();
     }
 
-    public User(Long id, String ip, String name, String email, String photo, String level, Long registTime, String birth, Integer age, String phone, String nickname) {
+    public AdminUser(Long id, String ip, String name, String email, String photo, String level, Long registTime, String birth, Integer age, String phone, String nickname) {
         this.id = id;
         this.ip = ip;
         this.name = name;
         this.email = email;
         this.photo = photo;
-        this.level = level;
         this.registTime = registTime;
         this.birth = birth;
         this.age = age;
@@ -89,12 +88,12 @@ public class User implements Serializable {
         this.photo = photo;
     }
 
-    public String getLevel() {
-        return level;
+    public String getPermission() {
+        return permission;
     }
 
-    public void setLevel(String level) {
-        this.level = level;
+    public void setPermission(String permission) {
+        this.permission = permission;
     }
 
     public Long getRegistTime() {
