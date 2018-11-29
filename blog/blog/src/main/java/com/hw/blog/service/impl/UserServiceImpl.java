@@ -3,7 +3,9 @@ package com.hw.blog.service.impl;
 import com.hw.blog.dao.Userdao;
 import com.hw.blog.model.User;
 import com.hw.blog.service.UserService;
+import com.hw.blog.util.PageUtil;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
 import java.util.HashMap;
@@ -25,12 +27,22 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List<User> getList(int start, int offset, String name, Integer activate) {
+    public List<User> getList(int start, int offset, User user, String field, String order) {
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("start", start);
         map.put("offset", offset);
-        map.put("name", name);
-        map.put("activate", activate);
+        map.put("name", PageUtil.like(user.getName()));
+        map.put("activate", user.getActivate());
+        if (StringUtils.isEmpty(field)) {
+            map.put("field", "id");
+        } else {
+            map.put("field", field);
+        }
+        if (StringUtils.isEmpty(order)) {
+            map.put("order", "desc");
+        } else {
+            map.put("order", order);
+        }
         return userdao.getList(map);
     }
 

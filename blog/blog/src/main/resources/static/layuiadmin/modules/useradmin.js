@@ -25,6 +25,15 @@
         height: "full-220",
         text: "对不起，加载出现异常！"
     }),
+        i.on('sort(LAY-user-manage)', function (obj) {
+            i.reload('id', {
+                initSort: obj,
+                where: {
+                    field: obj.field,
+                    order: obj.type
+                }
+            });
+        }),
         i.on("tool(LAY-user-manage)", function (e) {
             var id = e.data['id'];
             if ("del" === e.event) layer.prompt({formType: 1, title: "敏感操作，请输入密码"}, function (t, i) {
@@ -92,7 +101,7 @@
                     },
                     success: function (e, t) {
                         admin.req({
-                            url: '/user/user/' + id,
+                            url: '/user/' + id,
                             data: '',
                             done: function (res) {
                                 var json = eval(res);

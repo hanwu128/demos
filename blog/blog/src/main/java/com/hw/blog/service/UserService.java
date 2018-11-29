@@ -8,7 +8,7 @@ public interface UserService {
 
     int getTotal(String name, Integer activate);
 
-    List<User> getList(int start, int offset, String like, Integer activate);
+    List<User> getList(int start, int offset, User user, String field, String order);
 
     User getById(Long id);
 

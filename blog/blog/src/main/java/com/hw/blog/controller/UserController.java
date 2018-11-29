@@ -35,14 +35,27 @@ public class UserController {
     @Resource
     private MessagesService messagesService;
 
+    /**
+     * 用户列表
+     *
+     * @param request
+     * @param response
+     * @param user
+     * @param page
+     * @param limit
+     * @return
+     */
     @RequestMapping("/list")
-    public Object getList(HttpServletRequest request, HttpServletResponse response, User user, @RequestParam(value = "page") Integer page, @RequestParam(value = "limit") Integer limit) {
+    public Object getList(HttpServletRequest request, HttpServletResponse response, User user,
+                          @RequestParam(value = "page") Integer page, @RequestParam(value = "limit") Integer limit,
+                          @RequestParam(value = "field", required = false) String field,
+                          @RequestParam(value = "order", required = false) String order) {
         try {
             if (page == null || page <= 0) page = 1;
             if (limit == null || limit <= 0) limit = 10;
             Integer total = userService.getTotal(PageUtil.like(user.getName()), user.getActivate());
             Integer start = PageUtil.getStart(page, limit);
-            List<User> userList = userService.getList(start, limit, PageUtil.like(user.getName()), user.getActivate());
+            List<User> userList = userService.getList(start, limit, user, field, order);
             return new JsonResp(total.toString(), userList);
         } catch (Exception e) {
             e.printStackTrace();
@@ -50,6 +63,14 @@ public class UserController {
         return JsonResp.httpCode(response, HttpServletResponse.SC_INTERNAL_SERVER_ERROR).errorResp(messagesService.getMessage("error", new Object[]{"query user is error "}));
     }
 
+    /**
+     * 添加用户
+     *
+     * @param request
+     * @param response
+     * @param user
+     * @return
+     */
     @GetMapping("/add")
     public Object addUser(HttpServletRequest request, HttpServletResponse response, User user) {
         user.setIp(GetIpUtil.getIpAddr(request));
@@ -58,22 +79,47 @@ public class UserController {
         }
         user.setAge(CommonUtil.getAge(user.getBirth()));
         user.setCode(CommonUtil.getUUID());
+        user.setActivate(0);
         Integer rows = userService.addUser(user);
         return new JsonResp(user);
     }
 
-    @GetMapping("/user/{id}")
+    /**
+     * 根据ID查询用户
+     *
+     * @param request
+     * @param response
+     * @param id
+     * @return
+     */
+    @GetMapping("/{id}")
     public Object getUser(HttpServletRequest request, HttpServletResponse response, @PathVariable("id") Long id) {
         User user = userService.getById(id);
         return new JsonResp(user);
     }
 
+    /**
+     * 更新用户
+     *
+     * @param request
+     * @param response
+     * @param user
+     * @return
+     */
     @GetMapping("/update")
     public Object updateUser(HttpServletRequest request, HttpServletResponse response, User user) {
         userService.updateUser(user);
         return new JsonResp(user);
     }
 
+    /**
+     * 校验密码
+     *
+     * @param request
+     * @param response
+     * @param password
+     * @return
+     */
     @GetMapping("/verify/password/{password}")
     public Object verifyPassword(HttpServletRequest request, HttpServletResponse response, @PathVariable("password") String password) {
         //TODO 密码校验
@@ -87,6 +133,15 @@ public class UserController {
         return new JsonResp(password);
     }
 
+    /**
+     * 删除用户
+     *
+     * @param request
+     * @param response
+     * @param id
+     * @return
+     * @desc 支持批量删除
+     */
     @GetMapping("/del/{id}")
     public Object deltUser(HttpServletRequest request, HttpServletResponse response, @PathVariable("id") String id) {
         if (!StringUtils.isEmpty(id)) {
@@ -98,12 +153,14 @@ public class UserController {
         return new JsonResp(1001, "failure", null);
     }
 
-    @GetMapping("/{id}")
-    public Object getById(HttpServletRequest request, HttpServletResponse response, @PathVariable Long id) {
-        User user = userService.getById(id);
-        return user;
-    }
-
+    /**
+     * 上传图片
+     *
+     * @param file
+     * @param request
+     * @param response
+     * @return
+     */
     @PostMapping("/upload/photo")
     public Object uploadPhoto(@RequestParam("file") MultipartFile file, HttpServletRequest request, HttpServletResponse response) {
         try {
@@ -134,6 +191,14 @@ public class UserController {
         return newName;
     }
 
+    /**
+     * 用户注册
+     *
+     * @param request
+     * @param response
+     * @param user
+     * @return
+     */
     @PostMapping(value = "/register")
     public Object register(HttpServletRequest request, HttpServletResponse response, User user) {
         try {
@@ -156,6 +221,13 @@ public class UserController {
         return JsonResp.httpCode(response, HttpServletResponse.SC_INTERNAL_SERVER_ERROR).errorResp(messagesService.getMessage("error", new Object[]{"register user is error "}));
     }
 
+    /**
+     * 用户激活
+     *
+     * @param request
+     * @param response
+     * @param code
+     */
     @GetMapping("/activate/{code}")
     public void activate(HttpServletRequest request, HttpServletResponse response, @PathVariable String code) {
         try {
