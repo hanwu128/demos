@@ -22,6 +22,11 @@
         <result column="code" property="code"/>
         <result column="del" property="del"/>
     </resultMap>
+
+    <select id="login" resultType="user" parameterType="hashmap">
+        select id,name,password,email,photo,nickname from hw_users where del = 0 and name = #{name} and password = #{password}
+    </select>
+
     <select id="getTotal" resultType="java.lang.Integer" parameterType="hashmap">
         select count(1) count from hw_users where del = 0
         <if test='name != null and  "%" != name'>

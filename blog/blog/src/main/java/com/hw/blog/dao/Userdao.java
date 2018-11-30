@@ -28,4 +28,6 @@ public interface Userdao {
     Integer delUser(List<String> ids);
 
     User getPassWordById(Long id);
+
+    User login(Map<String, Object> map);
 }

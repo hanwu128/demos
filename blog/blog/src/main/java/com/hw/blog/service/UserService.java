@@ -23,4 +23,6 @@ public interface UserService {
     Integer delUser(List<String> ids);
 
     User getPassWordById(Long id);
+
+    User login(String username, String password);
 }

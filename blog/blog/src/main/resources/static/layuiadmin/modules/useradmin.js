@@ -12,7 +12,7 @@
             {field: "phone", title: "手机", minWidth: 80, maxWidth: 100},
             {field: "email", title: "邮箱", minWidth: 100, maxWidth: 100},
             {field: "level", width: 60, title: "等级"},
-            {field: "birth", title: "生日", minWidth: 90, maxWidth: 100, sort: !0},
+            {field: "birth", title: "生日", minWidth: 80, maxWidth: 100, sort: !0},
             {field: "age", title: "年龄", width: 70, sort: !0},
             {
                 field: "registTime", title: "加入时间", minWidth: 100, maxWidth: 120, sort: !0, templet: function (row) {

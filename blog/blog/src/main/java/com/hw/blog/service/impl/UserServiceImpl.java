@@ -84,4 +84,12 @@ public class UserServiceImpl implements UserService {
     public User getPassWordById(Long id) {
         return userdao.getPassWordById(id);
     }
+
+    @Override
+    public User login(String name, String password) {
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("name", name);
+        map.put("password", password);
+        return userdao.login(map);
+    }
 }
