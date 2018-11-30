@@ -7,18 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60037457-434b-4519-b13c-1490e1df167d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/model/LoginUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/util/ThreadUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/dao/Userdao.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/dao/Userdao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/useradmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/modules/useradmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/user/administrators/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/user/administrators/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/resources/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/templates/user/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/util/TokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/blog/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/blog-parent/target/" />
     <ignored path="$PROJECT_DIR$/blog/target/" />
@@ -79,13 +69,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="45" column="44" lean-forward="true" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+            <state relative-caret-position="580">
+              <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
               <folding>
                 <element signature="e#1085#1101#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TokenUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog/src/main/java/com/hw/blog/util/TokenUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="539">
+              <caret line="106" column="50" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/blog/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="483" column="7" lean-forward="true" selection-start-line="483" selection-start-column="7" selection-end-line="483" selection-end-column="7" />
+              <caret line="483" column="7" selection-start-line="483" selection-start-column="7" selection-end-line="483" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -183,8 +185,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/blog-web/web/layuiadmin/style/admin.css" />
-        <option value="$PROJECT_DIR$/blog-web/web/view/user/forget.html" />
         <option value="$PROJECT_DIR$/blog-web/web/view/component/table/radio.html" />
         <option value="$PROJECT_DIR$/blog-web/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/blog-web/web/views/home/console.html" />
@@ -234,6 +234,8 @@
         <option value="$PROJECT_DIR$/blog/src/main/resources/templates/user/login.html" />
         <option value="$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/config.js" />
         <option value="$PROJECT_DIR$/blog/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/blog/pom.xml" />
+        <option value="$PROJECT_DIR$/blog/src/main/java/com/hw/blog/util/TokenUtil.java" />
       </list>
     </option>
   </component>
@@ -398,6 +400,17 @@
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="hw" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
@@ -585,7 +598,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BlogApplication">
+  <component name="RunManager" selected="Application.TokenUtil">
     <configuration name="EmailController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hw.blog.controller.EmailController" />
       <module name="blog" />
@@ -610,6 +623,17 @@
     </configuration>
     <configuration name="SendMailHandler2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hw.blog.util.SendMailHandler2" />
+      <module name="blog" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hw.blog.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="TokenUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hw.blog.util.TokenUtil" />
       <module name="blog" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -865,9 +889,11 @@
       <item itemvalue="Application.EmailController" />
       <item itemvalue="Application.SendMailHandler2" />
       <item itemvalue="Application.ReceiveMailHandler" />
+      <item itemvalue="Application.TokenUtil" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TokenUtil" />
         <item itemvalue="Application.EmailController" />
         <item itemvalue="Application.ReceiveMailHandler" />
         <item itemvalue="Application.SendMailHandler2" />
@@ -908,12 +934,12 @@
       <workItem from="1543368597766" duration="28699000" />
       <workItem from="1543456965197" duration="11305000" />
       <workItem from="1543477544640" duration="12230000" />
-      <workItem from="1543556295391" duration="13497000" />
+      <workItem from="1543556295391" duration="15063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291541000" />
+    <option name="totallyTimeSpent" value="293107000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -926,7 +952,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50064266" side_tool="true" weight="0.4" />
@@ -939,7 +964,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993573" visible="true" weight="0.39915967" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4993573" visible="true" weight="0.39915967" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32867134" />
       <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
@@ -950,7 +975,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32867134" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21529563" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21529563" />
       <window_info anchor="bottom" id="Problems" order="8" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
@@ -978,20 +1003,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blog/src/main/resources/static/layuiadmin/json/console/top-card.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog-web/web/layuiadmin/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/src/main/java/com/hw/blog/hadeller.java" />
     <entry file="file://$PROJECT_DIR$/blog/src/main/java/com/hw/blog/handler/Time2LongHandler.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1288,7 +1299,7 @@
     <entry file="file://$PROJECT_DIR$/blog/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="483" column="7" lean-forward="true" selection-start-line="483" selection-start-column="7" selection-end-line="483" selection-end-column="7" />
+          <caret line="483" column="7" selection-start-line="483" selection-start-column="7" selection-end-line="483" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1325,10 +1336,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/src/main/java/com/hw/blog/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="45" column="44" lean-forward="true" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
+        <state relative-caret-position="580">
+          <caret line="45" column="44" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="44" />
           <folding>
             <element signature="e#1085#1101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/src/main/java/com/hw/blog/util/TokenUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="106" column="50" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
