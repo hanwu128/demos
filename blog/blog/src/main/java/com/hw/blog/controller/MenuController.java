@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * 菜单操作
  */
 @Controller
+@RequestMapping("/menu")
 public class MenuController {
 
     private static final String PAGE = "admin/index/";

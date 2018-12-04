@@ -1,11 +1,15 @@
 package com.hw.blog.util;
 
 import com.hw.blog.model.LoginUser;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.util.StringUtils;
 
 /**
  * 保存用户的登录信息
  */
 public class ThreadUtil {
+    private static final Logger logger = LoggerFactory.getLogger(ThreadUtil.class);
 
     private static final ThreadUtil instance = new ThreadUtil();
 
@@ -19,12 +23,28 @@ public class ThreadUtil {
         return instance;
     }
 
-    public void set(LoginUser user) {
+    public static void set(LoginUser user) {
         t.set(user);
     }
 
     public static LoginUser get() {
         return t.get();
+    }
+
+    /**
+     * 在ThreadLocal中取token
+     *
+     * @return
+     */
+    public static String getToken() {
+        String token = null;
+        if (get() == null || StringUtils.isEmpty(get().getToken())) {
+            logger.error("token is null");
+            return null;
+        } else {
+            token = get().getToken();
+        }
+        return token;
     }
 
 }

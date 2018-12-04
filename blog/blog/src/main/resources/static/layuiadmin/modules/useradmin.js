@@ -2,6 +2,7 @@
 ;layui.define(["table", "form"], function (e) {
     var t = layui.$, i = layui.table,
         f = layui.form, admin = layui.admin;
+    var token = layui.data('login_info').token;
     i.render({
         id: "id",
         elem: "#LAY-user-manage",
@@ -25,7 +26,24 @@
         page: true,
         limit: 10,
         height: "full-220",
-        text: "对不起，加载出现异常！"
+        //method: 'post',
+        //contentType: 'application/json',
+        where: {
+            token: token
+        },
+        text: "对不起，加载出现异常！",
+        done: function (res, curr, count) {
+            var code = res.code;
+            if (code === 401) {
+                layer.confirm(res.msg, {
+                    btn: ['确定', '取消'] //按钮
+                }, function () {
+                    top.location.href = '/';
+                }, function (index) {
+                    layer.close(index);
+                });
+            }
+        }
     }),
         i.on('sort(LAY-user-manage)', function (obj) {
             i.reload('id', {
@@ -81,7 +99,7 @@
                 layer.open({
                     type: 2,
                     title: "编辑用户",
-                    content: "/user/user/update.html",
+                    content: "/menu/user/user/update.html",
                     maxmin: !0,
                     area: ["500px", "450px"],
                     btn: ["确定", "取消"],

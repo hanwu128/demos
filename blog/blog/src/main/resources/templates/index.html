@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <link rel="stylesheet" href="../layuiadmin/layui/css/layui.css" media="all">
   <link rel="stylesheet" href="../layuiadmin/style/admin.css" media="all">
+  <script src="../../../layuiadmin/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+  <script src="../../../layuiadmin/jquery-3.3.1/jquery-3.3.1.js"></script>
   <script>
   /^http(s*):\/\//.test(location.href) || alert('请先部署到 localhost 下再访问');
   </script>
@@ -86,7 +88,7 @@
       <!-- 侧边菜单 -->
       <div class="layui-side layui-side-menu">
         <div class="layui-side-scroll">
-          <div class="layui-logo" lay-href="home/console.html">
+          <div class="layui-logo" lay-href="menu/home/console.html">
             <span>博客后台管理系统</span>
           </div>
 
@@ -98,13 +100,13 @@
               </a>
               <dl class="layui-nav-child">
                 <dd data-name="console" class="layui-this">
-                  <a lay-href="home/console.html">控制台</a>
+                  <a lay-href="menu/home/console.html">控制台</a>
                 </dd>
                 <dd data-name="console">
-                  <a lay-href="home/homepage1.html">主页一</a>
+                  <a lay-href="menu/home/homepage1.html">主页一</a>
                 </dd>
                 <dd data-name="console">
-                  <a lay-href="home/homepage2.html">主页二</a>
+                  <a lay-href="menu/home/homepage2.html">主页二</a>
                 </dd>
               </dl>
             </li>
@@ -386,13 +388,13 @@
               </a>
               <dl class="layui-nav-child">
                 <dd>
-                  <a lay-href="user/user/list.html">网站用户</a>
+                  <a lay-href="menu/user/user/list.html">网站用户</a>
                 </dd>
                 <dd>
-                  <a lay-href="user/administrators/list.html">后台管理员</a>
+                  <a lay-href="menu/user/administrators/list.html">后台管理员</a>
                 </dd>
                 <dd>
-                  <a lay-href="user/administrators/role.html">角色管理</a>
+                  <a lay-href="menu/user/administrators/role.html">角色管理</a>
                 </dd>
               </dl>
             </li>
@@ -446,14 +448,14 @@
         </div>
         <div class="layui-tab" lay-unauto lay-allowClose="true" lay-filter="layadmin-layout-tabs">
           <ul class="layui-tab-title" id="LAY_app_tabsheader">
-            <li lay-id="home/console.html" lay-attr="home/console.html" class="layui-this"><i class="layui-icon layui-icon-home"></i></li>
+            <li lay-id="menu/home/console.html" lay-attr="menu/home/console.html" class="layui-this"><i class="layui-icon layui-icon-home"></i></li>
           </ul>
         </div>
       </div>
       <!-- 主体内容 -->
       <div class="layui-body" id="LAY_app_body">
         <div class="layadmin-tabsbody-item layui-show">
-          <iframe src="home/console.html" frameborder="0" class="layadmin-iframe"></iframe>
+          <iframe src="menu/home/console.html" frameborder="0" class="layadmin-iframe"></iframe>
         </div>
       </div>
       <!-- 辅助元素，一般用于移动设备下遮罩 -->
@@ -477,13 +479,6 @@
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(hm, s);
   })();
-
-  $.ajaxSetup( {
-      headers: {
-          "token": "2423423423423423" ,
-      }
-
-  } );
   </script>
 </body>
 </html>

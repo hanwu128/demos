@@ -16,20 +16,19 @@ import java.util.Map;
 public class TokenUtil {
 
     /**
-     * 1.创建一个32-byte的密匙
+     * 创建一个32-byte的密匙
      */
-    private static final byte[] secret = "geiwodiangasfdjsikolkjikolkijswe".getBytes();
+    private static final byte[] secret = "gerenbokemishiabcdefghijklmnopqr".getBytes();
 
-    //生成一个token
+    /**
+     * 生成token
+     *
+     * @param payloadMap
+     * @return
+     * @throws JOSEException
+     */
     public static String creatToken(Map<String, Object> payloadMap) throws JOSEException {
-        //3.先建立一个头部Header
-        /**
-         * JWSHeader参数：1.加密算法法则,2.类型，3.。。。。。。。
-         * 一般只需要传入加密算法法则就可以。
-         * 这里则采用HS256
-         *
-         * JWSAlgorithm类里面有所有的加密算法法则，直接调用。
-         */
+        //建立一个头部Header
         JWSHeader jwsHeader = new JWSHeader(JWSAlgorithm.HS256);
         //建立一个载荷Payload
         Payload payload = new Payload(new JSONObject(payloadMap));
@@ -43,7 +42,14 @@ public class TokenUtil {
         return jwsObject.serialize();
     }
 
-    //解析一个token
+    /**
+     * 解析token
+     *
+     * @param token
+     * @return
+     * @throws ParseException
+     * @throws JOSEException
+     */
     public static Map<String, Object> valid(String token) throws ParseException, JOSEException {
         //解析token
         JWSObject jwsObject = JWSObject.parse(token);
@@ -82,6 +88,7 @@ public class TokenUtil {
         Map<String, Object> map = new HashMap<>();
         //建立载荷，这些数据根据业务，自己定义。
         map.put("uid", uid);
+        map.put("name", "aaa");
         //生成时间
         map.put("sta", new Date().getTime());
         //过期时间
@@ -108,6 +115,7 @@ public class TokenUtil {
                 if (i == 0) {
                     System.out.println("token解析成功");
                     JSONObject jsonObject = (JSONObject) validMap.get("data");
+                    System.out.println("uid是" + jsonObject.get("uid"));
                     System.out.println("uid是" + jsonObject.get("uid"));
                     System.out.println("sta是" + jsonObject.get("sta"));
                     System.out.println("exp是" + jsonObject.get("exp"));
