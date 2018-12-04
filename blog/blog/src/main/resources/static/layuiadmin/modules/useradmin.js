@@ -59,7 +59,7 @@
             if ("del" === e.event) layer.prompt({formType: 1, title: "敏感操作，请输入密码"}, function (t, i) {
                 layer.close(i);
                 admin.req({
-                    url: '/user/verify/password/' + t,
+                    url: '/user/verify/password/' + t + '?token=' + token,
                     data: '',
                     success: function (res) {
                         var json = eval(res);
@@ -67,7 +67,7 @@
                         if (code === 0) {
                             layer.confirm("真的删除行么", function (t) {
                                 admin.req({
-                                    url: '/user/del/' + id,
+                                    url: '/user/del/' + id + '?token=' + token,
                                     data: '',
                                     success: function (res) {
                                         var delJson = eval(res);
@@ -109,7 +109,7 @@
                             n = t.find("iframe").contents().find("#" + r);
                         l.layui.form.on("submit(" + r + ")", function (t) {
                             admin.req({
-                                url: '/user/update',
+                                url: '/user/update' + '?token=' + token,
                                 data: t.field,
                                 done: function (res) {
                                     i.reload("LAY-user-front-submit");
@@ -121,7 +121,7 @@
                     },
                     success: function (e, t) {
                         admin.req({
-                            url: '/user/' + id,
+                            url: '/user/' + id + '?token=' + token,
                             data: '',
                             done: function (res) {
                                 var json = eval(res);
@@ -219,7 +219,7 @@
             i.render({
                 id: "id",
                 elem: "#LAY-user-manage",
-                url: "/user/list",
+                url: "/user/list" + '?token=' + token,
                 cols: [[{type: "checkbox", fixed: "left"},
                     {field: "name", title: "用户名", minWidth: 100},
                     {field: "phone", title: "手机"},

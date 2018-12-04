@@ -65,7 +65,7 @@ public class LoginController {
             //生成时间
             userMap.put("sta", new Date().getTime());
             //过期时间，默认30分钟过期
-            userMap.put("exp", new Date().getTime() + 30 * 1000);
+            userMap.put("exp", new Date().getTime() + 30 * 60 * 1000);
             String token = TokenUtil.creatToken(userMap);
 
             ThreadUtil.set(new LoginUser(user.getId(), user.getName(), token));
