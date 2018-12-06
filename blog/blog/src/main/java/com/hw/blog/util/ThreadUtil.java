@@ -47,4 +47,20 @@ public class ThreadUtil {
         return token;
     }
 
+    /**
+     * 在ThreadLocal中取id
+     *
+     * @return
+     */
+    public static Long getId() {
+        Long id = null;
+        if (get() == null || get().getId() == null || get().getId() <= 0) {
+            logger.error("id is null");
+            return null;
+        } else {
+            id = get().getId();
+        }
+        return id;
+    }
+
 }

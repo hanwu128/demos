@@ -92,4 +92,9 @@ public class UserServiceImpl implements UserService {
         map.put("password", password);
         return userdao.login(map);
     }
+
+    @Override
+    public User getByName(String name) {
+        return userdao.getByName(name);
+    }
 }

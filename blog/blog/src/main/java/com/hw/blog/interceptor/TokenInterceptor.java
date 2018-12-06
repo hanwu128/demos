@@ -1,6 +1,8 @@
 package com.hw.blog.interceptor;
 
+import com.hw.blog.model.LoginUser;
 import com.hw.blog.service.UserService;
+import com.hw.blog.util.ThreadUtil;
 import com.hw.blog.util.TokenUtil;
 import net.minidev.json.JSONObject;
 import org.slf4j.Logger;
@@ -14,7 +16,6 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.text.ParseException;
 import java.util.Map;
 
 /**
@@ -60,6 +61,7 @@ public class TokenInterceptor implements HandlerInterceptor {
                 JSONObject jsonObject = (JSONObject) tokenMap.get("data");
                 Long id = (Long) jsonObject.get("id");
                 String name = (String) jsonObject.get("name");
+                ThreadUtil.set(new LoginUser(id, name, token));
             }
         } catch (Exception e) {
             e.printStackTrace();

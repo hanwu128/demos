@@ -1,6 +1,7 @@
 package com.hw.blog.model;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * 用户表
@@ -22,6 +23,7 @@ public class User implements Serializable {
     private Integer activate;//激活状态  0未激活  1已激活
     private String code;    //注册码
     private Integer del;    //删除标识  0未删除   1已删除
+    private List<Role> roles;//角色集合
 
     public User() {
         super();
@@ -159,5 +161,13 @@ public class User implements Serializable {
 
     public void setDel(Integer del) {
         this.del = del;
+    }
+
+    public List<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
     }
 }

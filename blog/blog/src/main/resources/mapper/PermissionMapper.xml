@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hw.blog.dao.PermissionDao">
+
+    <resultMap id="permission" type="com.hw.blog.model.Permission">
+        <result column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="descritpion" property="descritpion"/>
+        <result column="url" property="url"/>
+        <result column="pid" property="pid"/>
+    </resultMap>
+
+    <select id="getAll" resultType="permission">
+       select id,name,descritpion,url,pid from hw_permission
+    </select>
+
+    <select id="getByUserId" parameterType="java.lang.Long" resultType="permission">
+      select p.*
+        from hw_users u
+        LEFT JOIN hw_role_user sru on u.id= sru.user_id
+        LEFT JOIN hw_role r on sru.role_id=r.id
+        LEFT JOIN hw_permission_role spr on spr.role_id=r.id
+        LEFT JOIN hw_permission p on p.id =spr.permission_id
+        where u.id=#{userId}
+ </select>
+</mapper>

@@ -27,6 +27,7 @@
         <fastjson.version>1.2.47</fastjson.version>
         <persistence.version>1.0</persistence.version>
         <jwt.version>6.1.1</jwt.version>
+        <security.version>5.1.2.RELEASE</security.version>
     </properties>
 
     <dependencies>
@@ -69,19 +70,33 @@
             <artifactId>persistence-api</artifactId>
             <version>${persistence.version}</version>
         </dependency>
-        <!-- spring security 权限 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
         <!-- 访问静态资源 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
+
+        <!-- thymeleaf-extras-shiro -->
         <dependency>
-            <groupId>org.thymeleaf.extras</groupId>
-            <artifactId>thymeleaf-extras-springsecurity4</artifactId>
+            <groupId>com.github.theborakompanioni</groupId>
+            <artifactId>thymeleaf-extras-shiro</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <!-- shiro -->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-core</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-web</artifactId>
+            <version>1.4.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>1.4.0</version>
         </dependency>
         <!-- 热部署 -->
         <dependency>

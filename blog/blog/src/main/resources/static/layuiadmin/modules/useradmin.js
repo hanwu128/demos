@@ -86,7 +86,7 @@
                                 });
                             })
                         } else {
-                            layer.alert('密码错误！', {
+                            layer.alert('密码校验失败！！', {
                                 title: "错误信息",
                                 icon: 2,
                                 skin: 'layer-ext-moon'

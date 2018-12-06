@@ -122,15 +122,14 @@ public class UserController {
      */
     @GetMapping("/verify/password/{password}")
     public Object verifyPassword(HttpServletRequest request, HttpServletResponse response, @PathVariable("password") String password) {
-        //TODO 密码校验
-        /*User user = userService.getPassWordById(id);
+        Long id = ThreadUtil.getId();
+        User user = userService.getPassWordById(id);
         if (!StringUtils.isEmpty(password) && user != null && !StringUtils.isEmpty(user.getPassword())) {
             if (user.getPassword().equals(password)) {
-                return new JsonResp(0, "success", password);
+                return new JsonResp("密码校验通过！");
             }
-        }*/
-        //return new JsonResp(1001, "failure", password);
-        return new JsonResp(password);
+        }
+        return JsonResp.httpCode(response, HttpServletResponse.SC_BAD_REQUEST).errorResp(messagesService.getMessage("password.validate.failure", new Object[]{"密码校验失败！"}));
     }
 
     /**

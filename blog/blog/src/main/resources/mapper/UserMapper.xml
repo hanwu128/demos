@@ -94,4 +94,36 @@
 		select id,password from hw_users where id = #{id}
 	</select>
 
+    <select id="getByName" resultMap="getByNameMap" parameterType="java.lang.String">
+        select u.id as uid,
+        u.name as uname,
+        u.password as upassword,
+        u.email as uemail,
+        u.photo as uphoto,
+        u.nickname as unickname,
+        r.id as rid,
+        r.name as rname,
+        r.descritpion as rdescritpion
+        from hw_users u
+        LEFT JOIN hw_role_user sru on u.id= sru.user_id
+        LEFT JOIN hw_role r on sru.role_id=r.id
+        where u.del = 0 and u.name = #{name}
+    </select>
+
+    <resultMap id="getByNameMap" type="com.hw.blog.model.User">
+        <result column="uid" property="id"/>
+        <result column="uname" property="name"/>
+        <result column="upassword" property="password"/>
+        <result column="uemail" property="email"/>
+        <result column="uphoto" property="photo"/>
+        <result column="unickname" property="nickname"/>
+
+        <collection property="roles" ofType="com.hw.blog.model.Role">
+            <id column="rid" property="id"/>
+            <result column="rname" property="name"/>
+            <result column="rdescritpion" property="descritpion"/>
+        </collection>
+
+    </resultMap>
+
 </mapper>

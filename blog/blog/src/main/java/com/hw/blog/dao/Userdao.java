@@ -30,4 +30,6 @@ public interface Userdao {
     User getPassWordById(Long id);
 
     User login(Map<String, Object> map);
+
+    User getByName(String name);
 }
